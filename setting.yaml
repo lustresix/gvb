@@ -1,20 +1,22 @@
 # 数据库
 mysql:
   host: 127.0.0.1
-  port: 3306
+  port: 3307
   db: blog
   user: root
-  password: root
+  password: 123456
   log_level: dev
-# 日志
-logger:
-  level: info
-  prefix: '[blog]'
-  director: log
-  show-line: true
-  log-in-console: true
+
+# 日志配置
+log:
+  disable-caller: false
+  disable-stacktrace: false
+  level: debug
+  format: console
+  output-paths: [./tmp/blog.log, stdout]
+
 # 系统环境
 system:
   host: "0.0.0.0"
   port: 8087
-  env: dev
+  env: release

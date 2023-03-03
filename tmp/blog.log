@@ -1,0 +1,51 @@
+2023-03-03 18:32:40.794	info	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 18:55:11.792	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 19:08:45.744	[INFO]	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 19:09:10.571	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:00:13.039	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:05:59.762	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:05:59.763	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "0.0.0.0:%!d(string=8087)"}
+2023-03-03 20:05:59.763	[34mINFO[0m	system/conf_system.go:13	blog is running at,
+2023-03-03 20:06:47.573	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:06:47.573	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "0.0.0.0:%!d(string=8087)"}
+2023-03-03 20:06:47.573	[34mINFO[0m	system/conf_system.go:13	blog is running at,
+2023-03-03 20:07:15.028	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:07:15.029	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "0.0.0.0:%!d(string=8080)"}
+2023-03-03 20:07:15.029	[34mINFO[0m	system/conf_system.go:13	blog is running at,
+2023-03-03 20:08:21.280	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:08:21.280	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "0.0.0.0%!(EXTRA string=:, string=8080)"}
+2023-03-03 20:08:21.280	[34mINFO[0m	system/conf_system.go:11	blog is running at,
+2023-03-03 20:08:46.263	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:09:39.269	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:09:39.270	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "0.0.0.0%!(EXTRA string=:, string=8080)"}
+2023-03-03 20:09:39.270	[34mINFO[0m	system/conf_system.go:11	blog is running at,
+2023-03-03 20:11:39.994	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:11:39.995	[34mINFO[0m	system/conf_system.go:11	0.0.0.0:8080
+2023-03-03 20:12:38.441	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:12:38.442	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8080
+2023-03-03 20:15:03.481	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:15:03.482	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8080
+2023-03-03 20:40:49.868	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 20:40:49.868	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8080
+2023-03-03 21:10:05.312	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 21:10:05.313	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8080
+2023-03-03 21:10:52.900	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 21:10:52.901	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8080
+2023-03-03 21:33:59.770	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 21:33:59.771	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8080
+2023-03-03 21:44:40.289	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 21:44:40.291	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8080
+2023-03-03 21:44:40.317	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 21:44:40.317	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8080
+2023-03-03 21:44:47.719	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 21:44:47.719	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8080
+2023-03-03 21:45:43.495	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 21:45:43.496	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-03 22:01:39.296	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 22:01:39.296	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-03 22:03:09.664	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 22:03:09.664	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-03 22:03:40.903	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 22:03:40.904	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-03 22:06:42.992	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 22:06:42.993	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
