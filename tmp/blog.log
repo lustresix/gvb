@@ -49,3 +49,11 @@
 2023-03-03 22:03:40.904	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
 2023-03-03 22:06:42.992	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
 2023-03-03 22:06:42.993	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-03 22:29:39.168	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 22:29:39.168	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-03 23:51:40.019	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-03 23:51:40.019	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-04 10:44:04.201	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-04 10:44:04.202	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-04 10:44:48.509	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-04 10:44:48.509	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087

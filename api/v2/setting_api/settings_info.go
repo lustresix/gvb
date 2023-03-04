@@ -1,7 +1,10 @@
 package setting_api
 
-import "github.com/gin-gonic/gin"
+import (
+	"gbv2/models/res"
+	"github.com/gin-gonic/gin"
+)
 
 func (SettingsApi) SettingsInfoView(c *gin.Context) {
-	c.JSON(200, "pong")
+	res.FailWithCode(res.ErrorUserNotExist, c)
 }
