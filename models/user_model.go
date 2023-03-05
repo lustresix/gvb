@@ -20,5 +20,4 @@ type UserModel struct {
 	SingStatus    ctype.SignStatus `gorm:"type=smallint(6)" json:"sing_status"`                                              // 注册来源
 	ArticleModel  []ArticleModel   `gorm:"foreignKey:AuthId" json:"-"`                                                       // 文章列表
 	CollectsModel []CollectModel   `gorm:"many2many:auth2_collects;joinForeignKey:AuthID;JoinReferences:ArticleID" json:"-"` // 收藏文章列表
-	SiteModels    []SiteModel      `gorm:"many2many:auth_sites" json:"-"`                                                    // 收藏的网站列表
 }
