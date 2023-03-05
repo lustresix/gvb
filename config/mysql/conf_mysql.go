@@ -31,7 +31,7 @@ func DBInit() {
 		log.Panicw("数据库连接失败", err)
 	}
 
-	log.Infow("数据库连接成功")
+	log.Infow("数据库连接成功", "dsn:", dsn)
 
 	sqlDB, _ := db.DB()
 	sqlDB.SetMaxIdleConns(10)
