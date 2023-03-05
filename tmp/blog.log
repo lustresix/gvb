@@ -57,3 +57,156 @@
 2023-03-04 10:44:04.202	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
 2023-03-04 10:44:48.509	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
 2023-03-04 10:44:48.509	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-05 13:31:55.086	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-05 13:31:55.087	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-05 13:53:22.187	[34mINFO[0m	mysql/conf_mysql.go:32	数据库连接成功
+2023-03-05 13:53:22.187	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-05 15:49:30.343	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 15:49:30.344	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-05 15:50:29.185	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 15:50:29.202	[31mERROR[0m	log/conf_logger.go:157	Ignored key without a value.	{"ignored": "invalid field found for struct gbv2/models.CommentModel's field SubComments: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+2023-03-05 15:50:29.202	[31mPANIC[0m	mysql/auto_migrate.go:27	数据自动迁移失败
+gbv2/config/mysql.AutoMigrate
+	E:/study/coding/go/goblogv2/config/mysql/auto_migrate.go:27
+gbv2/config.InitConfig
+	E:/study/coding/go/goblogv2/config/enter.go:15
+gbv2/cmd.glob..func4
+	E:/study/coding/go/goblogv2/cmd/root.go:30
+github.com/spf13/cobra.(*Command).execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:920
+github.com/spf13/cobra.(*Command).ExecuteC
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:1044
+github.com/spf13/cobra.(*Command).Execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:968
+gbv2/cmd.Execute
+	E:/study/coding/go/goblogv2/cmd/root.go:39
+main.main
+	E:/study/coding/go/goblogv2/main.go:10
+runtime.main
+	D:/go/go1.19/src/runtime/proc.go:250
+2023-03-05 15:50:44.921	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 15:50:44.938	[31mERROR[0m	log/conf_logger.go:157	Ignored key without a value.	{"ignored": "invalid field found for struct gbv2/models.CommentModel's field SubComments: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+2023-03-05 15:50:44.937	[31mPANIC[0m	mysql/auto_migrate.go:27	数据自动迁移失败
+gbv2/config/mysql.AutoMigrate
+	E:/study/coding/go/goblogv2/config/mysql/auto_migrate.go:27
+gbv2/config.InitConfig
+	E:/study/coding/go/goblogv2/config/enter.go:15
+gbv2/cmd.glob..func4
+	E:/study/coding/go/goblogv2/cmd/root.go:30
+github.com/spf13/cobra.(*Command).execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:920
+github.com/spf13/cobra.(*Command).ExecuteC
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:1044
+github.com/spf13/cobra.(*Command).Execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:968
+gbv2/cmd.Execute
+	E:/study/coding/go/goblogv2/cmd/root.go:39
+main.main
+	E:/study/coding/go/goblogv2/main.go:10
+runtime.main
+	D:/go/go1.19/src/runtime/proc.go:250
+2023-03-05 15:52:09.953	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 15:52:09.969	[31mERROR[0m	log/conf_logger.go:157	Ignored key without a value.	{"ignored": "invalid field found for struct gbv2/models.CommentModel's field SubComments: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+2023-03-05 15:52:09.969	[31mPANIC[0m	mysql/auto_migrate.go:27	数据自动迁移失败
+gbv2/config/mysql.AutoMigrate
+	E:/study/coding/go/goblogv2/config/mysql/auto_migrate.go:27
+gbv2/config.InitConfig
+	E:/study/coding/go/goblogv2/config/enter.go:15
+gbv2/cmd.glob..func4
+	E:/study/coding/go/goblogv2/cmd/root.go:30
+github.com/spf13/cobra.(*Command).execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:920
+github.com/spf13/cobra.(*Command).ExecuteC
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:1044
+github.com/spf13/cobra.(*Command).Execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:968
+gbv2/cmd.Execute
+	E:/study/coding/go/goblogv2/cmd/root.go:39
+main.main
+	E:/study/coding/go/goblogv2/main.go:10
+runtime.main
+	D:/go/go1.19/src/runtime/proc.go:250
+2023-03-05 15:53:38.572	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 15:53:38.701	[31mERROR[0m	log/conf_logger.go:157	Ignored key without a value.	{"ignored": "invalid field found for struct gbv2/models.ArticleModel's field UserModel: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+2023-03-05 15:53:38.701	[31mPANIC[0m	mysql/auto_migrate.go:27	数据自动迁移失败
+gbv2/config/mysql.AutoMigrate
+	E:/study/coding/go/goblogv2/config/mysql/auto_migrate.go:27
+gbv2/config.InitConfig
+	E:/study/coding/go/goblogv2/config/enter.go:15
+gbv2/cmd.glob..func4
+	E:/study/coding/go/goblogv2/cmd/root.go:30
+github.com/spf13/cobra.(*Command).execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:920
+github.com/spf13/cobra.(*Command).ExecuteC
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:1044
+github.com/spf13/cobra.(*Command).Execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:968
+gbv2/cmd.Execute
+	E:/study/coding/go/goblogv2/cmd/root.go:39
+main.main
+	E:/study/coding/go/goblogv2/main.go:10
+runtime.main
+	D:/go/go1.19/src/runtime/proc.go:250
+2023-03-05 15:56:23.441	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 15:56:23.946	[34mINFO[0m	mysql/auto_migrate.go:29	迁移成功
+2023-03-05 15:56:23.947	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-05 15:57:58.831	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 15:57:59.332	[34mINFO[0m	mysql/auto_migrate.go:29	迁移成功
+2023-03-05 15:57:59.332	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-05 16:03:55.122	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 16:03:55.603	[34mINFO[0m	mysql/auto_migrate.go:29	迁移成功
+2023-03-05 16:03:55.603	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-05 16:09:15.018	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 16:09:15.558	[34mINFO[0m	mysql/auto_migrate.go:29	迁移成功
+2023-03-05 16:09:15.559	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-05 16:12:17.648	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 16:12:18.062	[34mINFO[0m	mysql/auto_migrate.go:28	迁移成功
+2023-03-05 16:12:18.062	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-05 16:19:22.629	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 16:19:22.812	[31mERROR[0m	log/conf_logger.go:157	Ignored key without a value.	{"ignored": "Error 3734 (HY000): Failed to add the foreign key constraint. Missing column 'article_id' for constraint 'fk_user_collect_models_user_collect_model' in the referenced table 'user_collect_models'"}
+2023-03-05 16:19:22.812	[31mPANIC[0m	mysql/auto_migrate.go:26	数据自动迁移失败
+gbv2/config/mysql.AutoMigrate
+	E:/study/coding/go/goblogv2/config/mysql/auto_migrate.go:26
+gbv2/config.InitConfig
+	E:/study/coding/go/goblogv2/config/enter.go:15
+gbv2/cmd.glob..func4
+	E:/study/coding/go/goblogv2/cmd/root.go:30
+github.com/spf13/cobra.(*Command).execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:920
+github.com/spf13/cobra.(*Command).ExecuteC
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:1044
+github.com/spf13/cobra.(*Command).Execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:968
+gbv2/cmd.Execute
+	E:/study/coding/go/goblogv2/cmd/root.go:39
+main.main
+	E:/study/coding/go/goblogv2/main.go:10
+runtime.main
+	D:/go/go1.19/src/runtime/proc.go:250
+2023-03-05 16:20:41.910	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 16:20:41.963	[31mERROR[0m	log/conf_logger.go:157	Ignored key without a value.	{"ignored": "Error 3734 (HY000): Failed to add the foreign key constraint. Missing column 'article_id' for constraint 'fk_user_collect_models_user_collect_model' in the referenced table 'user_collect_models'"}
+2023-03-05 16:20:41.963	[31mPANIC[0m	mysql/auto_migrate.go:26	数据自动迁移失败
+gbv2/config/mysql.AutoMigrate
+	E:/study/coding/go/goblogv2/config/mysql/auto_migrate.go:26
+gbv2/config.InitConfig
+	E:/study/coding/go/goblogv2/config/enter.go:15
+gbv2/cmd.glob..func4
+	E:/study/coding/go/goblogv2/cmd/root.go:30
+github.com/spf13/cobra.(*Command).execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:920
+github.com/spf13/cobra.(*Command).ExecuteC
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:1044
+github.com/spf13/cobra.(*Command).Execute
+	D:/go/goPath/pkg/mod/github.com/spf13/cobra@v1.6.1/command.go:968
+gbv2/cmd.Execute
+	E:/study/coding/go/goblogv2/cmd/root.go:39
+main.main
+	E:/study/coding/go/goblogv2/main.go:10
+runtime.main
+	D:/go/go1.19/src/runtime/proc.go:250
+2023-03-05 16:25:08.442	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 16:25:08.671	[34mINFO[0m	mysql/auto_migrate.go:28	迁移成功
+2023-03-05 16:25:08.671	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087
+2023-03-05 16:25:48.775	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功
+2023-03-05 16:25:49.171	[34mINFO[0m	mysql/auto_migrate.go:28	迁移成功
+2023-03-05 16:25:49.172	[34mINFO[0m	system/conf_system.go:11	blog sever is running at 0.0.0.0:8087

@@ -9,6 +9,8 @@ import (
 	"time"
 )
 
+var DB *gorm.DB
+
 func Dsn() string {
 	dsn := fmt.Sprintf("%v:%v@tcp(%v:%v)/%v?charset=utf8mb4&parseTime=True&loc=Local",
 		viper.GetString("mysql.user"),
@@ -38,4 +40,5 @@ func DBInit() {
 	if db == nil {
 		log.Errorw("db is nil")
 	}
+	DB = db
 }

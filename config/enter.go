@@ -12,6 +12,7 @@ func InitConfig() {
 	log.LogInit(logOptions())
 	defer log.Sync() // Sync 将缓存中的日志刷新到磁盘文件中
 	mysql.DBInit()
+	mysql.AutoMigrate()
 	router := routers.InitRouter()
 	router.Run(system.Addr())
 }
