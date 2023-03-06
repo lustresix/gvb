@@ -33,3 +33,14 @@ system:
     env: release
     host: 0.0.0.0
     port: 8087
+qi_niu:
+    enable: false
+    access_key: UMM-xx-FdRIF-xx
+    secret_key: xx
+    bucket:
+    cdn:
+    zone:
+    size: 5
+upload:
+    size: 3
+    path: uploads/images
