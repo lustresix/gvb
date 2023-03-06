@@ -31,4 +31,8 @@ const (
 
 	ErrorAuthCheckTokenFail    = 4001 //token 错误
 	ErrorAuthCheckTokenTimeout = 4002 //token 过期
+
+	// code = 5000... 传入参数错误
+
+	ErrorParameterTransfer = 5001
 )

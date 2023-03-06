@@ -4,3 +4,43 @@
 2023-03-05 16:37:13.897	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！端口: 0.0.0.0:8087
 2023-03-05 16:38:31.983	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
 2023-03-05 16:38:31.983	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-05 22:40:08.973	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-05 22:40:08.974	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-05 22:40:59.050	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-05 22:40:59.050	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-05 22:42:08.331	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-05 22:42:08.331	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-05 22:42:31.794	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-05 22:42:31.794	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-05 22:52:24.017	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-05 22:52:24.022	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-05 22:52:24.098	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-05 22:52:24.098	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-05 22:57:46.486	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-05 22:57:46.486	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-05 22:57:46.487	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-05 22:57:46.487	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-05 23:01:02.859	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-05 23:01:02.860	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-06 11:23:08.821	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-06 11:23:08.821	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-06 11:27:55.244	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-06 11:27:55.245	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-06 11:29:57.759	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-06 11:29:57.760	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-06 11:31:04.164	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-06 11:31:04.164	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-06 11:40:19.539	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-06 11:40:19.539	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-06 11:43:56.927	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-06 11:43:56.927	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-06 11:46:17.953	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-06 11:46:17.953	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-06 11:48:33.614	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-06 11:48:33.615	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-06 11:50:34.652	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-06 11:50:34.652	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-06 11:50:52.445	[34mINFO[0m	setting_api/setting_update.go:27	修改配置成功！
+2023-03-06 11:52:36.872	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-06 11:52:36.872	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-06 11:58:46.069	[34mINFO[0m	setting_api/setting_update.go:27	修改配置成功！

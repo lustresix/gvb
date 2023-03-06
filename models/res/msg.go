@@ -21,6 +21,8 @@ var Code2Msg = map[int]string{
 
 	ErrorAuthCheckTokenFail:    "无权限，token错误!",
 	ErrorAuthCheckTokenTimeout: "token 过期!",
+
+	ErrorParameterTransfer: "传入参数错误",
 }
 
 func GetMsg(code int) string {

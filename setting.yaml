@@ -1,22 +1,35 @@
-# 数据库
-mysql:
-  host: 127.0.0.1
-  port: 3307
-  db: blog
-  user: root
-  password: 123456
-  log_level: dev
-
-# 日志配置
 log:
-  disable-caller: false
-  disable-stacktrace: false
-  level: debug
-  format: console
-  output-paths: [./tmp/blog.log, stdout]
-
-# 系统环境
+    disable-caller: false
+    disable-stacktrace: false
+    format: console
+    level: debug
+    output-paths:
+        - ./tmp/blog.log
+        - stdout
+mysql:
+    db: blog
+    host: 127.0.0.1
+    log_level: dev
+    password: 123456
+    port: 3307
+    user: root
+site_info:
+    created_at: "2023-03-06"
+    bei_an: 才不备案呢
+    title: lustresix's blog
+    qq_image: ""
+    version: 2.0.1
+    wechat_image: ""
+    name: 夏末linxx
+    job: 生活一区500强宿舍拧螺丝专员
+    addr: 福建福州
+    slogan: 博客
+    slogan_en: blog
+    web: ""
+    bilibili_url: https://space.bilibili.com/20810342
+    gitee_url: ""
+    github_url: https://github.com/lustresix
 system:
-  host: "0.0.0.0"
-  port: 8087
-  env: release
+    env: release
+    host: 0.0.0.0
+    port: 8087
