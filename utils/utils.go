@@ -21,7 +21,7 @@ func InList(key string, list []string) bool {
 }
 
 // Rename 防止在图片名称上动手脚
-func Rename(file *multipart.FileHeader, imagePath string) (string, string) {
+func Rename(file *multipart.FileHeader, imagePath string) (dst string, name string) {
 	//获取图像后缀
 	y := path.Ext(file.Filename)
 	//获取时间戳防止重复 !需要精准到纳秒，防止传输过快产生同名，然后出错
@@ -33,8 +33,8 @@ func Rename(file *multipart.FileHeader, imagePath string) (string, string) {
 	//将随机数转换类型
 	x := strconv.FormatInt(int64(b), 10)
 	//写入保存位置与自定义名称，并且带上文件自带后缀名
-	dst := path.Join(imagePath, z+x+y)
-	name := z + x + y
+	dst = path.Join(imagePath, z+x+y)
+	name = z + x + y
 	return dst, name
 }
 

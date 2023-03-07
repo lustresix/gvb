@@ -11,6 +11,11 @@ type Response struct {
 	Msg  string      `json:"msg"`
 }
 
+type ListResponse[T any] struct {
+	Count int64 `json:"count"`
+	List  T     `json:"list"`
+}
+
 func Result(code int, data any, msg string, c *gin.Context) {
 	c.JSON(http.StatusOK, Response{
 		Code: code,
@@ -25,6 +30,12 @@ func OK(data any, msg string, c *gin.Context) {
 
 func OKWithData(data any, c *gin.Context) {
 	Result(SUCCESS, data, "success", c)
+}
+func OKWitList(list any, count int64, c *gin.Context) {
+	OKWithData(ListResponse[any]{
+		List:  list,
+		Count: count,
+	}, c)
 }
 
 func OKWithMsg(msg string, c *gin.Context) {
