@@ -5,16 +5,25 @@ import (
 	"gbv2/config/mysql"
 	"gbv2/models"
 	"gbv2/models/res"
+	"github.com/fatih/structs"
 	"github.com/gin-gonic/gin"
 )
 
 type AdvertReq struct {
-	Title  string `json:"title" binding:"required" msg:"请输入标题"`
-	Href   string `json:"href" binding:"required,url" msg:"请输入连接"`
-	Images string `json:"images" binding:"required,url" msg:"请输入图片"`
-	IsShow bool   `json:"is_show" binding:"required" msg:"请输入是否展示"`
+	Title  string `json:"title" binding:"required" msg:"请输入标题"structs:"title"`
+	Href   string `json:"href" binding:"required,url" msg:"请输入连接"structs:"href"`
+	Images string `json:"images" binding:"required,url" msg:"请输入图片"structs:"images"`
+	IsShow bool   `json:"is_show" msg:"请输入是否展示"structs:"is_show"`
 }
 
+// AdvertCreateView 添加广告
+// @Tags 广告管理
+// @Summary 创建广告
+// @Description 创建广告
+// @Param data body AdvertReq    true "多个参数"
+// @Router /api/adverts [post]
+// @Produce json
+// @Success 200 {Object} res.Response{"msg":"响应"}
 func (AdvertApi) AdvertCreateView(c *gin.Context) {
 	var req AdvertReq
 	err := c.ShouldBindJSON(&req)
@@ -32,12 +41,8 @@ func (AdvertApi) AdvertCreateView(c *gin.Context) {
 		return
 	}
 
-	err = mysql.DB.Create(&models.AdvertModel{
-		Title:  req.Title,
-		Href:   req.Href,
-		Images: req.Images,
-		IsShow: req.IsShow,
-	}).Error
+	maps := structs.Map(&req)
+	err = mysql.DB.Create(maps).Error
 
 	if err != nil {
 		log.Errorw("err", err)

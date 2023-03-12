@@ -3,6 +3,8 @@ package routers
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
+	swaggerFiles "github.com/swaggo/files"
+	gs "github.com/swaggo/gin-swagger"
 )
 
 type RouterGroup struct {
@@ -12,6 +14,7 @@ type RouterGroup struct {
 func InitRouter() *gin.Engine {
 	gin.SetMode(viper.GetString("system.env"))
 	router := gin.Default()
+	router.GET("/swagger/*any", gs.WrapHandler(swaggerFiles.Handler))
 
 	apiRouterGroup := router.Group("api")
 

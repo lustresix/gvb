@@ -1,0 +1,118 @@
+basePath: /
+definitions:
+  advert_api.AdvertReq:
+    properties:
+      href:
+        type: string
+      images:
+        type: string
+      is_show:
+        type: boolean
+      title:
+        type: string
+    required:
+    - href
+    - images
+    - title
+    type: object
+  models.PageInfo:
+    properties:
+      key:
+        type: string
+      limit:
+        type: integer
+      page:
+        type: integer
+      sort:
+        type: string
+    type: object
+  models.RemoveRequest:
+    properties:
+      id_list:
+        items:
+          type: integer
+        type: array
+    type: object
+host: 127.0.0.1:8087
+info:
+  contact: {}
+  description: blogV2 API文档
+  title: blogV2 API文档
+  version: "1.0"
+paths:
+  /api/adverts:
+    delete:
+      description: 删除广告
+      parameters:
+      - description: 删除参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.RemoveRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: msg":"响应"}
+          schema:
+            type: Object
+      summary: 删除广告
+      tags:
+      - 广告管理
+    get:
+      description: 获取广告
+      parameters:
+      - description: 查询参数
+        in: body
+        name: data
+        schema:
+          $ref: '#/definitions/models.PageInfo'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: msg":"响应"}
+          schema:
+            type: Object
+      summary: 获取广告
+      tags:
+      - 广告管理
+    post:
+      description: 创建广告
+      parameters:
+      - description: 多个参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/advert_api.AdvertReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: msg":"响应"}
+          schema:
+            type: Object
+      summary: 创建广告
+      tags:
+      - 广告管理
+    put:
+      description: 修改广告
+      parameters:
+      - description: 查询参数
+        in: body
+        name: data
+        schema:
+          $ref: '#/definitions/advert_api.AdvertReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: msg":"响应"}
+          schema:
+            type: Object
+      summary: 修改广告
+      tags:
+      - 广告管理
+swagger: "2.0"
