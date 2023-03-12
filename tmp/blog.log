@@ -296,3 +296,120 @@
 2023-03-07 15:12:51.999	[34mINFO[0m	images_api/image_upload.go:113	上传图片成功	{"place: ": "uploads/images/16781731719921283007887.png"}
 2023-03-07 15:13:31.624	[31mERROR[0m	models/image_model.go:21	err	{"err": null}
 2023-03-07 15:13:31.625	[31mERROR[0m	models/image_model.go:21	err	{"err": null}
+2023-03-08 16:52:07.175	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 16:52:07.176	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 16:52:10.558	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "七牛还没打开啊"}
+2023-03-08 16:52:10.562	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "七牛还没打开啊"}
+2023-03-08 21:45:33.704	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 21:45:33.705	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 21:45:39.200	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:45:39.203	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:46:50.349	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 21:46:50.349	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 21:46:53.155	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:46:53.158	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:48:56.593	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 21:48:56.594	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 21:48:58.937	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:48:58.939	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:49:19.553	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 21:49:19.553	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 21:49:21.337	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:49:21.340	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:52:20.317	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 21:52:20.317	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 21:52:29.865	[34mINFO[0m	setting_api/setting_update.go:27	修改配置成功！
+2023-03-08 21:52:43.528	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:52:43.530	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:55:51.177	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 21:55:51.177	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 21:55:53.437	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:55:53.439	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:56:59.669	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 21:56:59.669	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 21:57:00.571	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:57:00.573	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:58:06.167	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 21:58:06.168	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 21:58:40.580	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 21:58:40.581	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 21:59:13.363	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 21:59:13.363	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 21:59:14.833	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 21:59:14.836	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:01:05.042	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:01:05.042	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:04:26.852	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:04:26.852	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:04:27.689	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:04:27.692	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:09:07.720	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:09:07.720	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:09:29.895	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:09:29.897	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:09:52.275	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:09:52.276	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:10:05.553	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:10:05.556	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:12:58.465	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:12:58.465	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:13:00.376	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:13:00.378	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:13:29.580	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:13:29.581	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:13:30.013	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:13:30.014	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:13:31.593	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:13:31.596	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:17:15.693	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:17:15.694	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:17:17.755	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "七牛还没打开啊"}
+2023-03-08 22:17:17.757	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "七牛还没打开啊"}
+2023-03-08 22:17:27.827	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "七牛还没打开啊"}
+2023-03-08 22:17:27.829	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "七牛还没打开啊"}
+2023-03-08 22:17:50.236	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:17:50.237	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:17:51.051	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:17:51.052	[31mERROR[0m	images_api/image_upload.go:92	七牛云上传失败	{"err": "请配置access_key和secret_key"}
+2023-03-08 22:19:13.316	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:19:13.316	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:26:19.803	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:26:19.803	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:26:33.387	[34mINFO[0m	images_api/image_upload.go:110	上传图片成功	{"place: ": "qiniu.scintilla.ltd/16782855814348204008081.png"}
+2023-03-08 22:26:38.599	[34mINFO[0m	images_api/image_upload.go:110	上传图片成功	{"place: ": "qiniu.scintilla.ltd/16782855933901684007887.png"}
+2023-03-08 22:27:37.078	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:27:37.078	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:43:30.622	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:43:30.623	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:43:37.927	[34mINFO[0m	images_api/image_upload.go:110	上传图片成功	{"place: ": "qiniu.scintilla.ltd/16782866144050685008081.png"}
+2023-03-08 22:46:14.000	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-08 22:46:14.000	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-08 22:46:35.368	[34mINFO[0m	images_api/image_upload.go:110	上传图片成功	{"place: ": "qiniu.scintilla.ltd/16782867866320396008081.png"}
+2023-03-10 18:34:48.007	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-10 18:34:48.008	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-10 18:35:20.150	[34mINFO[0m	images_api/image_upload.go:110	上传图片成功	{"place: ": "qiniu.scintilla.ltd/16784445110966809008081.png"}
+2023-03-12 11:20:42.916	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-12 11:20:42.923	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-12 11:25:04.135	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-12 11:25:04.135	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-12 11:27:53.921	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-12 11:27:53.922	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-12 11:27:58.606	[31mERROR[0m	log/conf_logger.go:148	Ignored key without a value.	{"ignored": "json: Unmarshal(non-pointer advert_api.AdvertReq)"}
+2023-03-12 11:27:58.606	[31mERROR[0m	advert_api/advert_create.go:22	err
+2023-03-12 11:28:34.301	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-12 11:28:34.301	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-12 11:28:36.003	[31mERROR[0m	advert_api/advert_create.go:22	err	{"err": "json: Unmarshal(non-pointer advert_api.AdvertReq)"}
+2023-03-12 11:30:12.994	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-12 11:30:12.994	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-12 11:30:13.074	[31mERROR[0m	advert_api/advert_create.go:22	err	{"err": "Key: 'AdvertReq.Href' Error:Field validation for 'Href' failed on the 'url' tag\nKey: 'AdvertReq.Images' Error:Field validation for 'Images' failed on the 'url' tag"}
+2023-03-12 11:30:15.362	[31mERROR[0m	advert_api/advert_create.go:22	err	{"err": "Key: 'AdvertReq.Href' Error:Field validation for 'Href' failed on the 'url' tag\nKey: 'AdvertReq.Images' Error:Field validation for 'Images' failed on the 'url' tag"}
+2023-03-12 11:33:45.099	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-12 11:33:45.100	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-12 11:34:51.410	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-12 11:34:51.410	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-12 11:36:20.690	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-12 11:36:20.690	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-12 11:37:00.330	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-12 11:37:00.330	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-12 11:37:15.119	[31mERROR[0m	log/conf_logger.go:148	Ignored key without a value.	{"ignored": {"title":"test1","href":"http://www.baidu.com","images":"www.bilibili.com","is_show":true}}
+2023-03-12 11:37:15.119	[31mERROR[0m	advert_api/advert_create.go:22	err	{"err": "Key: 'AdvertReq.Images' Error:Field validation for 'Images' failed on the 'url' tag"}

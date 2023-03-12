@@ -20,5 +20,7 @@ func InitRouter() *gin.Engine {
 	routerGroupApp.SettingRouter()
 	// 图片上传
 	routerGroupApp.ImagesRouter()
+	// 广告
+	routerGroupApp.AdvertRouter()
 	return router
 }

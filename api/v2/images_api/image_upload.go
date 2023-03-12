@@ -5,7 +5,9 @@ import (
 	"gbv2/config/mysql"
 	"gbv2/global"
 	"gbv2/models"
+	"gbv2/models/ctype"
 	"gbv2/models/res"
+	"gbv2/plugin/qiniu"
 	"gbv2/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
@@ -84,8 +86,32 @@ func (ImagesApi) ImageUploadView(c *gin.Context) {
 			continue
 		}
 
+		if viper.GetBool("qi_niu.enable") == true {
+			imagePath, name, err := qiniu.UploadImage(bytes, file.Filename)
+			if err != nil {
+				log.Errorw("七牛云上传失败", "err", err)
+				continue
+			}
+			// 持久化数据库
+			mysql.DB.Create(&models.ImageModel{
+				Path:      imagePath,
+				Hash:      hash,
+				Name:      name,
+				ImageType: ctype.Qiniu,
+			})
+
+			// 标记为成功
+			resList = append(resList, FileUploadResponse{
+				FileName:  file.Filename,
+				IsSuccess: true,
+				Msg:       "七牛云上传成功！",
+			})
+
+			log.Infow("上传图片成功", "place: ", imagePath+"/"+name)
+			continue
+		}
 		// 更名保存
-		dst, name := utils.Rename(file, imagePath)
+		dst, name := utils.Rename(file.Filename, imagePath)
 		err = c.SaveUploadedFile(file, dst)
 		if err != nil {
 			resList = append(resList, FileUploadResponse{
@@ -98,9 +124,10 @@ func (ImagesApi) ImageUploadView(c *gin.Context) {
 
 		// 持久化数据库
 		mysql.DB.Create(&models.ImageModel{
-			Path: imagePath,
-			Hash: hash,
-			Name: name,
+			Path:      imagePath,
+			Hash:      hash,
+			Name:      name,
+			ImageType: ctype.Local,
 		})
 
 		// 标记为成功

@@ -13,6 +13,14 @@ mysql:
     password: 123456
     port: 3307
     user: root
+qi_niu:
+    access_key: PsxBIWhDY3Kv8hruN3D9fP2LjuomhjlIh6_Q_6dm
+    bucket: xm-blog-images
+    cdn: qiniu.scintilla.ltd
+    enable: true
+    secret_key: qvxvclzt4juE-_UjB_lulwXzBVttRzvexPa69mDn
+    size: 5
+    zone: as0
 site_info:
     created_at: "2023-03-06"
     bei_an: 才不备案呢
@@ -33,14 +41,6 @@ system:
     env: release
     host: 0.0.0.0
     port: 8087
-qi_niu:
-    enable: false
-    access_key: UMM-xx-FdRIF-xx
-    secret_key: xx
-    bucket:
-    cdn:
-    zone:
-    size: 5
 upload:
-    size: 3
     path: uploads/images
+    size: 3

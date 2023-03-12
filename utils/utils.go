@@ -4,7 +4,6 @@ import (
 	"crypto/md5"
 	"encoding/hex"
 	"math/rand"
-	"mime/multipart"
 	"path"
 	"strconv"
 	"time"
@@ -21,9 +20,9 @@ func InList(key string, list []string) bool {
 }
 
 // Rename 防止在图片名称上动手脚
-func Rename(file *multipart.FileHeader, imagePath string) (dst string, name string) {
+func Rename(filename string, imagePath string) (dst string, name string) {
 	//获取图像后缀
-	y := path.Ext(file.Filename)
+	y := path.Ext(filename)
 	//获取时间戳防止重复 !需要精准到纳秒，防止传输过快产生同名，然后出错
 	a := time.Now().UnixNano()
 	//获取一个1w以内的随机数
