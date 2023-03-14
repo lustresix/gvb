@@ -12,10 +12,10 @@ import (
 // @Tags 广告管理
 // @Summary 获取广告
 // @Description 获取广告
-// @Param data body models.PageInfo   false "查询参数"
+// @Param data query models.PageInfo   false "查询参数"
 // @Router /api/adverts [get]
 // @Produce json
-// @Success 200 {Object} res.Response{"msg":"响应"}
+// @Success 200 {Object} res.Response{data=res.ListResponse[models.AdvertModel]}
 func (AdvertApi) AdvertListView(c *gin.Context) {
 	var info models.PageInfo
 	err := c.ShouldBindQuery(&info)

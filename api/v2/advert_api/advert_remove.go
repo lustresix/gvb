@@ -15,7 +15,7 @@ import (
 // @Param data body models.RemoveRequest  true "删除参数"
 // @Router /api/adverts [delete]
 // @Produce json
-// @Success 200 {Object} res.Response{"msg":"响应"}
+// @Success 200 {Object} res.Response{data=string}
 func (AdvertApi) AdvertRemoveView(c *gin.Context) {
 	var re models.RemoveRequest
 	err := c.ShouldBindJSON(&re)

@@ -15,17 +15,6 @@ definitions:
     - images
     - title
     type: object
-  models.PageInfo:
-    properties:
-      key:
-        type: string
-      limit:
-        type: integer
-      page:
-        type: integer
-      sort:
-        type: string
-    type: object
   models.RemoveRequest:
     properties:
       id_list:
@@ -54,7 +43,7 @@ paths:
       - application/json
       responses:
         "200":
-          description: msg":"响应"}
+          description: OK
           schema:
             type: Object
       summary: 删除广告
@@ -63,16 +52,23 @@ paths:
     get:
       description: 获取广告
       parameters:
-      - description: 查询参数
-        in: body
-        name: data
-        schema:
-          $ref: '#/definitions/models.PageInfo'
+      - in: query
+        name: key
+        type: string
+      - in: query
+        name: limit
+        type: integer
+      - in: query
+        name: page
+        type: integer
+      - in: query
+        name: sort
+        type: string
       produces:
       - application/json
       responses:
         "200":
-          description: msg":"响应"}
+          description: OK
           schema:
             type: Object
       summary: 获取广告
@@ -97,19 +93,21 @@ paths:
       summary: 创建广告
       tags:
       - 广告管理
+  /api/adverts/:id:
     put:
       description: 修改广告
       parameters:
       - description: 查询参数
         in: body
         name: data
+        required: true
         schema:
           $ref: '#/definitions/advert_api.AdvertReq'
       produces:
       - application/json
       responses:
         "200":
-          description: msg":"响应"}
+          description: OK
           schema:
             type: Object
       summary: 修改广告

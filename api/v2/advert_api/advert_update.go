@@ -12,10 +12,10 @@ import (
 // @Tags 广告管理
 // @Summary 修改广告
 // @Description 修改广告
-// @Param data body AdvertReq   false "查询参数"
-// @Router /api/adverts [put]
+// @Param data body AdvertReq   true "查询参数"
+// @Router /api/adverts/:id [put]
 // @Produce json
-// @Success 200 {Object} res.Response{"msg":"响应"}
+// @Success 200 {Object} res.Response{data=string}
 func (AdvertApi) AdvertUpdateView(c *gin.Context) {
 	var req AdvertReq
 	id := c.Param("id")

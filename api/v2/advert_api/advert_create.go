@@ -10,9 +10,9 @@ import (
 )
 
 type AdvertReq struct {
-	Title  string `json:"title" binding:"required" msg:"请输入标题"structs:"title"`
-	Href   string `json:"href" binding:"required,url" msg:"请输入连接"structs:"href"`
-	Images string `json:"images" binding:"required,url" msg:"请输入图片"structs:"images"`
+	Title  string `json:"title" binding:"required" msg:"请输入标题" structs:"title"`
+	Href   string `json:"href" binding:"required,url" msg:"请输入连接" structs:"href"`
+	Images string `json:"images" binding:"required,url" msg:"请输入图片" structs:"images"`
 	IsShow bool   `json:"is_show" msg:"请输入是否展示"structs:"is_show"`
 }
 
