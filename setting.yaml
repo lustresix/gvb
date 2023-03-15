@@ -44,3 +44,7 @@ system:
 upload:
     path: uploads/images
     size: 3
+jwt:
+    issuer: "1234"
+    expires: 10
+    secret: xxx

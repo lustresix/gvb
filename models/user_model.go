@@ -17,7 +17,7 @@ type UserModel struct {
 	Token         string           `gorm:"size:64" json:"token"`                                                               // 唯一id
 	IP            string           `gorm:"size:20" json:"ip"`                                                                  // ip地址
 	Role          ctype.Role       `gorm:"4;default:1" json:"role"`                                                            // 权限
-	SingStatus    ctype.SignStatus `gorm:"type=smallint(6)" json:"sing_status"`                                                // 注册来源
+	SignStatus    ctype.SignStatus `gorm:"type=smallint(6)" json:"sing_status"`                                                // 注册来源
 	ArticleModel  []ArticleModel   `gorm:"foreignKey:UserID" json:"-"`                                                         // 文章列表
 	CollectsModel []ArticleModel   `gorm:"many2many:user_collect_models;joinForeignKey:AuthID;JoinReferences:UserID" json:"-"` // 收藏文章列表
 }

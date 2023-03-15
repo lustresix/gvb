@@ -4,6 +4,7 @@ Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
+	"fmt"
 	"gbv2/config/mysql"
 
 	"github.com/spf13/cobra"
@@ -22,6 +23,12 @@ to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		mysql.DBInit()
 		mysql.AutoMigrate()
+		fmt.Printf("user or admin：")
+		role := ""
+		fmt.Scanln(&role)
+		if role != "" {
+			mysql.CreateUser(role)
+		}
 	},
 }
 

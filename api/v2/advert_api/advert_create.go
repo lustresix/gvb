@@ -45,7 +45,7 @@ func (AdvertApi) AdvertCreateView(c *gin.Context) {
 	err = mysql.DB.Create(maps).Error
 
 	if err != nil {
-		log.Errorw("err", err)
+		log.Errorw("err", "err", err)
 		res.FailWithMsg("添加广告失败", c)
 		return
 	}
