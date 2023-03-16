@@ -651,3 +651,5 @@
 2023-03-14 22:25:18.736	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
 2023-03-14 22:25:46.245	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
 2023-03-14 22:25:46.245	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-16 14:37:12.774	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-16 14:37:12.775	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
