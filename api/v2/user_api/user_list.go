@@ -12,16 +12,8 @@ import (
 
 func (UserApi) UserListView(c *gin.Context) {
 	// 如何判断是管理员
-	token := c.Request.Header.Get("token")
-	if token == "" {
-		res.FailWithMsg("未携带token", c)
-		return
-	}
-	claims, err := jwt.ParseToken(token)
-	if err != nil {
-		res.FailWithMsg("token错误", c)
-		return
-	}
+	_claims, _ := c.Get("claims")
+	claims := _claims.(*jwt.CustomClaims)
 
 	var page models.PageInfo
 	if err := c.ShouldBindQuery(&page); err != nil {

@@ -21,20 +21,15 @@ type CustomClaims struct {
 	jwt.StandardClaims
 }
 
-var (
-	Secret   = viper.GetString("jwt.secret")
-	Expires  = viper.GetDuration("jwt.expires")
-	Issuer   = viper.GetString("jwt.issuer")
-	MySecret = []byte(Secret)
-)
+var MySecret = []byte(viper.GetString("jwt.secret"))
 
 // GetToken 创建 Token
 func GetToken(user JwtPayLoad) (string, error) {
 	claim := CustomClaims{
 		user,
 		jwt.StandardClaims{
-			ExpiresAt: jwt.At(time.Now().Add(time.Hour * Expires)), // 默认2小时过期
-			Issuer:    Issuer,                                      // 签发人
+			ExpiresAt: jwt.At(time.Now().Add(time.Hour * viper.GetDuration("jwt.expires"))), // 默认48小时过期
+			Issuer:    viper.GetString("jwt.issuer"),                                        // 签发人
 		},
 	}
 

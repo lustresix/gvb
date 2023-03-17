@@ -46,5 +46,5 @@ upload:
     size: 3
 jwt:
     issuer: "1234"
-    expires: 10
+    expires: 48
     secret: xxx
