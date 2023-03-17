@@ -48,3 +48,15 @@ jwt:
     issuer: "1234"
     expires: 48
     secret: xxx
+redis:
+    addr: 127.0.0.1:6379
+    password: 123456
+    db: 0
+    pool_size: 100
+email:
+    host: ""
+    user: xx@qq.com
+    password: ""
+    default_from_email: ""
+    use_ssl: true
+    user_tls : false

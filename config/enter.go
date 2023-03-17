@@ -3,6 +3,7 @@ package config
 import (
 	"gbv2/config/log"
 	"gbv2/config/mysql"
+	"gbv2/config/redis"
 	"gbv2/config/system"
 	"gbv2/routers"
 	"github.com/spf13/viper"
@@ -12,6 +13,7 @@ func InitConfig() {
 	log.LogInit(logOptions())
 	defer log.Sync() // Sync 将缓存中的日志刷新到磁盘文件中
 	mysql.DBInit()
+	redis.RedisInit()
 	router := routers.InitRouter()
 	router.Run(system.Addr())
 }
