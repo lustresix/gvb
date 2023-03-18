@@ -711,3 +711,21 @@
 2023-03-17 22:00:58.128	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
 2023-03-17 22:00:58.131	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
 2023-03-17 22:00:58.131	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-18 23:11:23.270	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-18 23:11:25.308	[31mERROR[0m	redis/conf_redis.go:28	redis连接失败	{"err": "dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it."}
+2023-03-18 23:11:25.309	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-18 23:19:33.397	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-18 23:19:33.404	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-18 23:19:33.405	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-18 23:21:44.709	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-18 23:21:44.712	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-18 23:21:44.712	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-18 23:21:48.404	[31mERROR[0m	user_api/user_bind_email.go:30	err	{"err": "invalid character '}' looking for beginning of object key string"}
+2023-03-18 23:22:29.400	[31mERROR[0m	user_api/user_bind_email.go:49	验证码发送失败	{"err": "dial tcp :0: connectex: The requested address is not valid in its context."}
+2023-03-18 23:22:44.520	[31mERROR[0m	user_api/user_bind_email.go:49	验证码发送失败	{"err": "dial tcp :0: connectex: The requested address is not valid in its context."}
+2023-03-18 23:25:52.000	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-18 23:25:52.007	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-18 23:25:52.007	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-18 23:27:14.276	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-18 23:27:14.278	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-18 23:27:14.278	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}

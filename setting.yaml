@@ -54,9 +54,10 @@ redis:
     db: 0
     pool_size: 100
 email:
-    host: ""
-    user: xx@qq.com
-    password: ""
+    host: "smtp.qq.com"
+    port: 25
+    user: 3054840288@qq.com
+    password: "dywxonvoamldddbc"
     default_from_email: ""
     use_ssl: true
     user_tls : false

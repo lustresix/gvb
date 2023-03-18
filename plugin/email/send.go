@@ -57,6 +57,7 @@ func sendEmail(userName, authCode, host string, port int, mailTo, sandName strin
 	m.SetHeader("From", m.FormatAddress(userName, sandName))
 	m.SetHeader("To", mailTo)
 	m.SetHeader("Subject", subject)
+	m.SetBody("text/html", body)
 	d := gomail.NewDialer(host, port, userName, authCode)
 	err := d.DialAndSend(m)
 	return err

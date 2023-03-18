@@ -27,6 +27,7 @@ func (UserApi) UserBindEmailView(c *gin.Context) {
 	var cr BindEmailRequest
 	err := c.ShouldBindJSON(&cr)
 	if err != nil {
+		log.Errorw("err", "err", err)
 		res.FailWithCode(res.ErrorParameterTransfer, c)
 		return
 	}
