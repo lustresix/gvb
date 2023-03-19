@@ -61,3 +61,7 @@ email:
     default_from_email: ""
     use_ssl: true
     user_tls : false
+qq:
+    appid:
+    key:
+    redirect:
