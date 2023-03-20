@@ -31,6 +31,7 @@ func InitRouter() *gin.Engine {
 	routerGroupApp.UserRouter()
 	// 广告
 	routerGroupApp.TagRouter()
-
+	// 消息
+	routerGroupApp.MessageApi()
 	return router
 }
