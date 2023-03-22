@@ -65,3 +65,5 @@ qq:
     appid:
     key:
     redirect:
+es:
+    host: http://52.140.216.134:9200/

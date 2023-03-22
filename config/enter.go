@@ -1,6 +1,7 @@
 package config
 
 import (
+	"gbv2/config/es"
 	"gbv2/config/log"
 	"gbv2/config/mysql"
 	"gbv2/config/redis"
@@ -14,6 +15,7 @@ func InitConfig() {
 	defer log.Sync() // Sync 将缓存中的日志刷新到磁盘文件中
 	mysql.DBInit()
 	redis.RedisInit()
+	es.EsConnect()
 	router := routers.InitRouter()
 	router.Run(system.Addr())
 }
