@@ -5,7 +5,7 @@ import (
 	"gbv2/middleware"
 )
 
-func (router RouterGroup) MessageApi() {
+func (router RouterGroup) MessageRouter() {
 	messageApi := v2.ApiGroupApp.MessageApi
 	router.POST("message", messageApi.MessageCreateView)
 	router.GET("message_all", middleware.JwtAdmin(), messageApi.MessageAllListView)

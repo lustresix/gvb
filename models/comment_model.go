@@ -10,8 +10,7 @@ type CommentModel struct {
 	Content            string          `gorm:"size:256" json:"content"`
 	DiggCount          int             `gorm:"size:8;default:0" json:"digg_count"`
 	CommentCount       int             `gorm:"size:8;default:0" json:"comment_count"`
-	Article            ArticleModel    `gorm:"foreignKey:ArticleID " json:"-"`
-	ArticleID          uint            `json:"article_id"`
+	ArticleESID        string          `json:"article_es_id"`
 	User               UserModel       `json:"user"`
 	UserID             uint            `json:"user_id"`
 }

@@ -17,7 +17,7 @@ qi_niu:
     access_key: PsxBIWhDY3Kv8hruN3D9fP2LjuomhjlIh6_Q_6dm
     bucket: xm-blog-images
     cdn: qiniu.scintilla.ltd
-    enable: true
+    enable: false
     secret_key: qvxvclzt4juE-_UjB_lulwXzBVttRzvexPa69mDn
     size: 5
     zone: as0
@@ -49,8 +49,8 @@ jwt:
     expires: 48
     secret: xxx
 redis:
-    addr: 127.0.0.1:6379
-    password: 123456
+    addr: 10.0.0.66:6379
+    password: "000415"
     db: 0
     pool_size: 100
 email:
@@ -66,4 +66,4 @@ qq:
     key:
     redirect:
 es:
-    host: http://52.140.216.134:9200/
+    host: http://10.0.0.66:9201/

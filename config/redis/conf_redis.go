@@ -11,10 +11,10 @@ import (
 var RDB *redis.Client
 
 func RedisInit() {
-	RDB = ConnectRedis(0)
+	RDB = ConnectRedis()
 }
 
-func ConnectRedis(db int) *redis.Client {
+func ConnectRedis() *redis.Client {
 	rdb := redis.NewClient(&redis.Options{
 		Addr:     viper.GetString("redis.addr"),
 		Password: viper.GetString("redis.password"), // no password set

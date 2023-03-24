@@ -18,7 +18,7 @@ func EsConnect() {
 		elastic.SetBasicAuth("", ""),
 	)
 	if err != nil {
-		log.Errorw("es连接失败 %s", err.Error())
+		log.Errorw("Elasticsearch连接失败 %s", err.Error())
 	}
 	log.Infow("Elasticsearch连接成功")
 	ES = c

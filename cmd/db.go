@@ -23,7 +23,7 @@ to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		mysql.DBInit()
 		mysql.AutoMigrate()
-		fmt.Printf("user or admin：")
+		fmt.Printf("visitor or admin(if don't need to create user just enter):")
 		role := ""
 		fmt.Scanln(&role)
 		if role != "" {
