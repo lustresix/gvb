@@ -1,26 +1,30 @@
 package article_api
 
 import (
-	"fmt"
 	"gbv2/config/log"
 	"gbv2/config/mysql"
 	"gbv2/models"
 	"gbv2/models/ctype"
 	"gbv2/models/res"
 	"gbv2/utils/jwt"
+	md "github.com/JohannesKaufmann/html-to-markdown"
+	"github.com/PuerkitoBio/goquery"
 	"github.com/gin-gonic/gin"
+	"github.com/russross/blackfriday"
+	"math/rand"
+	"strings"
 	"time"
 )
 
 type ArticleRequest struct {
 	Title    string      `json:"title" binding:"required" msg:"文章标题必填"`   // 文章标题
-	Abstract string      `json:"abstract"`                                      // 文章简介
+	Abstract string      `json:"abstract"`                                // 文章简介
 	Content  string      `json:"content" binding:"required" msg:"文章内容必填"` // 文章内容
-	Category string      `json:"category"`                                      // 文章分类
-	Source   string      `json:"source"`                                        // 文章来源
-	Link     string      `json:"link"`                                          // 原文链接
-	BannerID uint        `json:"banner_id"`                                     // 文章封面id
-	Tags     ctype.Array `json:"tags"`                                          // 文章标签
+	Category string      `json:"category"`                                // 文章分类
+	Source   string      `json:"source"`                                  // 文章来源
+	Link     string      `json:"link"`                                    // 原文链接
+	BannerID uint        `json:"banner_id"`                               // 文章封面id
+	Tags     ctype.Array `json:"tags"`                                    // 文章标签
 }
 
 func (ArticleApi) ArticleCreateView(c *gin.Context) {
@@ -28,7 +32,6 @@ func (ArticleApi) ArticleCreateView(c *gin.Context) {
 	claims := _claims.(*jwt.CustomClaims)
 	userID := claims.UserID
 	userNickName := claims.NickName
-	fmt.Println("token获取成功")
 	var cr ArticleRequest
 	err := c.ShouldBindJSON(&cr)
 	if err != nil {
@@ -36,16 +39,44 @@ func (ArticleApi) ArticleCreateView(c *gin.Context) {
 		res.FailWithCode(res.ErrorParameterTransfer, c)
 		return
 	}
+	// 文章处理
 
+	// markdown 转 html
+	unsafe := blackfriday.MarkdownCommon([]byte(cr.Content))
+
+	// 防xss攻击
+	doc, _ := goquery.NewDocumentFromReader(strings.NewReader(string(unsafe)))
+	nodes := doc.Find("script").Nodes
+	// 如果有移除
+	if len(nodes) > 0 {
+		// 有script标签
+		doc.Find("script").Remove()
+		converter := md.NewConverter("", true, nil)
+		html, _ := doc.Html()
+		markdown, _ := converter.ConvertString(html)
+		cr.Content = markdown
+	}
 	// 截取前 30 个汉字
 	if cr.Abstract == "" {
-		abs := []rune(cr.Content)
+		abs := []rune(doc.Text())
 		if len(abs) > 30 {
 			cr.Abstract = string(abs[:30])
 		} else {
-			cr.Abstract = string(abs[:])
+			cr.Abstract = string(abs)
 		}
 
+	}
+
+	// 是否有图片，没有从后台选一张
+	if cr.BannerID == 0 {
+		var bannerIDList []uint
+		mysql.DB.Model(models.ImageModel{}).Select("id").Scan(&bannerIDList)
+		if len(bannerIDList) == 0 {
+			res.FailWithMsg("一张图片都没有捏", c)
+			return
+		}
+		rand.Seed(time.Now().UnixNano())
+		cr.BannerID = bannerIDList[rand.Intn(len(bannerIDList))]
 	}
 
 	var coverModel models.ImageModel

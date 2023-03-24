@@ -902,3 +902,15 @@
 2023-03-24 23:40:54.992	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
 2023-03-24 23:40:55.089	[34mINFO[0m	es/conf_es.go:23	Elasticsearch连接成功
 2023-03-24 23:40:55.089	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-24 23:59:58.653	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-24 23:59:58.742	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-24 23:59:58.839	[34mINFO[0m	es/conf_es.go:23	Elasticsearch连接成功
+2023-03-24 23:59:58.839	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-25 00:00:20.337	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-25 00:00:20.452	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-25 00:00:20.547	[34mINFO[0m	es/conf_es.go:23	Elasticsearch连接成功
+2023-03-25 00:00:20.547	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-25 00:00:52.714	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-25 00:00:52.824	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-25 00:00:52.921	[34mINFO[0m	es/conf_es.go:23	Elasticsearch连接成功
+2023-03-25 00:00:52.921	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
