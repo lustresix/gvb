@@ -6,7 +6,6 @@ package cmd
 import (
 	"fmt"
 	"gbv2/config/mysql"
-
 	"github.com/spf13/cobra"
 )
 

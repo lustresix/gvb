@@ -89,7 +89,7 @@ func (ArticleApi) ArticleCreateView(c *gin.Context) {
 
 	// 用户头像
 	var avatar string
-	err = mysql.DB.Model(models.UserModel{}).Where("avatar = ?", userID).Scan(&avatar).Error
+	err = mysql.DB.Model(models.UserModel{}).Where("id = ?", userID).Select("avatar").Scan(&avatar).Error
 	if err != nil {
 		res.FailWithMsg("用户不存在", c)
 		return
@@ -100,6 +100,7 @@ func (ArticleApi) ArticleCreateView(c *gin.Context) {
 		CreatedAt:    now,
 		UpdatedAt:    now,
 		Title:        cr.Title,
+		Keyword:      cr.Title,
 		Abstract:     cr.Abstract,
 		Content:      cr.Content,
 		UserID:       userID,
@@ -111,6 +112,11 @@ func (ArticleApi) ArticleCreateView(c *gin.Context) {
 		BannerID:     cr.BannerID,
 		BannerUrl:    coverUrl,
 		Tags:         cr.Tags,
+	}
+
+	if article.ISExistData() {
+		res.FailWithMsg("已经在里面了", c)
+		return
 	}
 
 	err = article.Create()
