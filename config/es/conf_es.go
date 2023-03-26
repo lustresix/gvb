@@ -19,6 +19,7 @@ func EsConnect() {
 	)
 	if err != nil {
 		log.Errorw("Elasticsearch连接失败 %s", err.Error())
+		return
 	}
 	log.Infow("Elasticsearch连接成功")
 	ES = c

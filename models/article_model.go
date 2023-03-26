@@ -115,6 +115,10 @@ func (ArticleModel) Mapping() string {
 `
 }
 
+func ESCreateIndex() {
+	ArticleModel{}.CreateIndex()
+}
+
 // IndexExists 索引是否存在
 func (a ArticleModel) IndexExists() bool {
 	exists, err := es.ES.
