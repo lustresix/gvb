@@ -5,7 +5,6 @@ import (
 	"gbv2/config/mysql"
 	"gbv2/models"
 	"gbv2/models/res"
-	"github.com/fatih/structs"
 	"github.com/gin-gonic/gin"
 )
 
@@ -30,8 +29,9 @@ func (TagApi) TagCreateView(c *gin.Context) {
 		return
 	}
 
-	maps := structs.Map(&req)
-	err = mysql.DB.Create(maps).Error
+	err = mysql.DB.Create(&models.TagModel{
+		Title: req.Title,
+	}).Error
 
 	if err != nil {
 		log.Errorw("err", "err", err)

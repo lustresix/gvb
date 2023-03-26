@@ -5,7 +5,6 @@ import (
 	"gbv2/config/mysql"
 	"gbv2/models"
 	"gbv2/models/res"
-	"github.com/fatih/structs"
 	"github.com/gin-gonic/gin"
 )
 
@@ -41,8 +40,12 @@ func (AdvertApi) AdvertCreateView(c *gin.Context) {
 		return
 	}
 
-	maps := structs.Map(&req)
-	err = mysql.DB.Create(maps).Error
+	err = mysql.DB.Create(&models.AdvertModel{
+		Title:  req.Title,
+		Href:   req.Href,
+		Images: req.Images,
+		IsShow: req.IsShow,
+	}).Error
 
 	if err != nil {
 		log.Errorw("err", "err", err)

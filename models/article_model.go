@@ -79,25 +79,28 @@ func (ArticleModel) Mapping() string {
         "type": "integer"
       },
       "user_nick_name": { 
-        "type": "text"
+        "type": "keyword"
       },
       "user_avatar": { 
-        "type": "text"
+        "type": "keyword"
       },
       "category": { 
-        "type": "text"
+        "type": "keyword"
       },
       "source": { 
-        "type": "text"
+        "type": "keyword"
       },
       "link": { 
-        "type": "text"
+        "type": "keyword"
       },
       "banner_id": {
         "type": "integer"
       },
       "banner_url": { 
-        "type": "text"
+        "type": "keyword"
+      },
+      "tags": { 
+        "type": "keyword"
       },
       "created_at":{
         "type": "date",
@@ -151,7 +154,7 @@ func (a ArticleModel) CreateIndex() error {
 		log.Errorw("创建失败", "err", err)
 		return err
 	}
-	log.Infow("索引 %s 创建成功", a.Index())
+	log.Infow("索引创建成功", a.Index())
 	return nil
 }
 

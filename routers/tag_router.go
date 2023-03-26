@@ -6,8 +6,8 @@ import (
 
 func (router RouterGroup) TagRouter() {
 	tagApi := v2.ApiGroupApp.TagApi
-	router.POST("Tags", tagApi.TagCreateView)
-	router.GET("Tags", tagApi.TagListView)
-	router.PUT("Tags/:id", tagApi.TagUpdateView)
-	router.DELETE("Tags", tagApi.TagRemoveView)
+	router.POST("tag", tagApi.TagCreateView)
+	router.GET("tag", tagApi.TagListView)
+	router.PUT("tag/:id", tagApi.TagUpdateView)
+	router.DELETE("tag", tagApi.TagRemoveView)
 }

@@ -1261,3 +1261,156 @@
 2023-03-26 12:10:22.846	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
 2023-03-26 12:10:22.940	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
 2023-03-26 12:10:22.940	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 19:33:23.582	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 19:33:23.748	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 19:33:23.855	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 19:33:23.855	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 19:37:19.401	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 19:37:19.565	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 19:37:19.672	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 19:37:19.672	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 19:39:55.372	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 19:39:55.527	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 19:39:55.631	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 19:39:55.631	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 19:40:42.496	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 19:40:42.591	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 19:40:42.691	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 19:40:42.691	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 19:40:43.670	[31mERROR[0m	tag_api/tag_create.go:37	err	{"err": "unsupported data type: map[title:test]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+2023-03-26 19:40:51.948	[31mERROR[0m	tag_api/tag_create.go:37	err	{"err": "unsupported data type: map[title:test]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+2023-03-26 19:42:28.985	[31mERROR[0m	tag_api/tag_create.go:37	err	{"err": "unsupported data type: map[title:后端]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+2023-03-26 19:48:56.479	[31mERROR[0m	menu_api/menu_create.go:78	菜单图片关联失败	{"err": "Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`blog`.`menu_image_models`, CONSTRAINT `fk_menu_image_models_image_model` FOREIGN KEY (`image_id`) REFERENCES `image_models` (`id`))"}
+2023-03-26 19:49:09.245	[31mERROR[0m	menu_api/menu_create.go:31	err	{"err": "invalid character ']' looking for beginning of value"}
+2023-03-26 19:49:44.658	[31mERROR[0m	tag_api/tag_create.go:37	err	{"err": "unsupported data type: map[title:test]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+2023-03-26 19:55:36.560	[31mERROR[0m	tag_api/tag_create.go:37	err	{"err": "unsupported data type: map[title:test]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+2023-03-26 19:56:54.549	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 19:56:54.649	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 19:56:54.753	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 19:56:54.753	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 19:56:57.101	[31mERROR[0m	tag_api/tag_create.go:37	err	{"err": "unsupported data type: map[title:test]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+2023-03-26 19:57:12.358	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 19:57:12.503	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 19:57:12.603	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 19:57:12.604	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 19:58:02.251	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 19:58:02.345	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 19:58:02.446	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 19:58:02.446	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 19:58:14.307	[31mERROR[0m	tag_api/tag_create.go:37	err	{"err": "unsupported data type: &map[title:test]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+2023-03-26 19:58:38.123	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 19:58:38.220	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 19:58:38.321	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 19:58:38.322	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 19:59:37.509	[31mERROR[0m	advert_api/advert_create.go:48	err	{"err": "unsupported data type: map[href:http://www.baidu.com images:http://www.bilibili.com is_show:true title:test]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+2023-03-26 20:01:04.290	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:01:04.383	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:01:04.485	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:01:04.485	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:02:14.649	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:02:14.780	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:02:14.882	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:02:14.883	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:16:55.160	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:16:55.329	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:16:55.442	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:16:55.442	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:17:29.810	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:17:29.915	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:17:30.026	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:17:30.026	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:18:14.999	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:18:15.095	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:18:15.197	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:18:15.197	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:23:07.348	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:23:07.546	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:23:07.674	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:23:07.674	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:23:21.536	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:23:21.633	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:23:21.738	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:23:21.739	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:26:55.990	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:26:56.090	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:26:56.207	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:26:56.207	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:32:32.672	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:32:32.771	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:32:32.873	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:32:32.873	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:33:03.556	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:33:03.657	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:33:03.765	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:33:03.765	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:34:05.328	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:34:05.332	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:34:05.422	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:34:05.422	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:34:05.526	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:34:05.526	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:34:05.561	[34mINFO[0m	models/article_model.go:163	索引存在，删除索引
+2023-03-26 20:34:05.561	[34mINFO[0m	models/article_model.go:163	索引存在，删除索引
+2023-03-26 20:34:06.082	[34mINFO[0m	models/article_model.go:174	索引删除成功
+2023-03-26 20:34:06.086	[31mERROR[0m	models/article_model.go:167	删除索引失败	{"err": "elastic: Error 404 (Not Found): no such index [article_index] [type=index_not_found_exception]"}
+2023-03-26 20:34:06.704	[31mERROR[0m	models/article_model.go:150	创建索引失败	{"err": "elastic: Error 400 (Bad Request): index [article_index/euWKgypfTSChoH1QYKsJjg] already exists [type=resource_already_exists_exception]"}
+2023-03-26 20:34:06.705	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:34:07.646	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "article_index"}
+2023-03-26 20:34:07.646	[34mINFO[0m	models/article_model.go:157	索引 %s 创建成功
+2023-03-26 20:34:07.646	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:34:27.383	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:34:27.482	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:34:27.582	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:34:27.582	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:35:10.853	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:35:11.002	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:35:11.101	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:35:11.135	[34mINFO[0m	models/article_model.go:163	索引存在，删除索引
+2023-03-26 20:35:11.509	[34mINFO[0m	models/article_model.go:174	索引删除成功
+2023-03-26 20:35:13.217	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "article_index"}
+2023-03-26 20:35:13.217	[34mINFO[0m	models/article_model.go:157	索引 %s 创建成功
+2023-03-26 20:35:13.218	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:35:46.459	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:35:46.551	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:35:46.650	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:35:46.683	[34mINFO[0m	models/article_model.go:163	索引存在，删除索引
+2023-03-26 20:35:46.949	[34mINFO[0m	models/article_model.go:174	索引删除成功
+2023-03-26 20:35:48.724	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "article_index"}
+2023-03-26 20:35:48.724	[34mINFO[0m	models/article_model.go:157	索引创建成功
+2023-03-26 20:35:48.725	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:39:17.416	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:39:17.519	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:39:17.618	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:39:17.653	[34mINFO[0m	models/article_model.go:163	索引存在，删除索引
+2023-03-26 20:39:17.923	[34mINFO[0m	models/article_model.go:174	索引删除成功
+2023-03-26 20:39:19.011	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "article_index"}
+2023-03-26 20:39:19.011	[34mINFO[0m	models/article_model.go:157	索引创建成功
+2023-03-26 20:39:19.011	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:40:01.526	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:40:01.620	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:40:01.720	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:40:01.755	[34mINFO[0m	models/article_model.go:163	索引存在，删除索引
+2023-03-26 20:40:02.049	[34mINFO[0m	models/article_model.go:174	索引删除成功
+2023-03-26 20:40:03.418	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "article_index"}
+2023-03-26 20:40:03.417	[34mINFO[0m	models/article_model.go:157	索引创建成功
+2023-03-26 20:40:03.418	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:40:24.393	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:40:24.539	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:40:24.638	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:40:24.638	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:41:55.775	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:41:55.961	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:41:56.059	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:41:56.060	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:42:26.731	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:42:26.825	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:42:26.926	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:42:26.926	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:42:39.912	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:42:40.010	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:42:40.113	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:42:40.114	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-26 20:42:58.884	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-26 20:42:58.982	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-26 20:42:59.080	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-26 20:42:59.080	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}

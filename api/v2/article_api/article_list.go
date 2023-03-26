@@ -21,6 +21,14 @@ func (ArticleApi) ArticleListView(c *gin.Context) {
 		res.OKWithMsg("查询失败", c)
 		return
 	}
+	//  如果list为空
+	data := filter.Omit("list", list)
+	_list, _ := data.(filter.Filter)
+	if string(_list.MustMarshalJSON()) == "{}" {
+		list = make([]models.ArticleModel, 0)
+		res.OKWitList(list, int64(count), c)
+		return
+	}
 
 	res.OKWitList(filter.Omit("list", list), int64(count), c)
 }
