@@ -67,3 +67,5 @@ qq:
     redirect:
 es:
     host: http://10.0.0.66:9201/
+gpt:
+    key: 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

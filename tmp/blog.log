@@ -1414,3 +1414,73 @@
 2023-03-26 20:42:58.982	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
 2023-03-26 20:42:59.080	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
 2023-03-26 20:42:59.080	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:09:12.165	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:09:12.255	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:09:12.366	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:09:15.428	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hi there! How can I assist you today?
+2023-03-28 18:09:15.429	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:13:15.825	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:13:15.928	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:13:16.023	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:13:20.960	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
+2023-03-28 18:13:20.961	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:15:12.868	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:15:12.958	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:15:13.049	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:15:13.140	[31mERROR[0m	gpt/conf_gpt.go:28	GPT连接失败	{"err": "Post \"https://api.openai.com/v1/chat/completions\": EOF"}
+2023-03-28 18:15:13.140	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:15:26.908	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:15:27.080	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:15:27.170	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:15:31.374	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hi there! How may I assist you today?
+2023-03-28 18:15:31.375	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:16:43.754	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:16:43.892	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:16:43.987	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:16:47.806	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today as an AI language model?
+2023-03-28 18:16:47.806	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:18:35.534	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:18:35.624	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:18:35.716	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:18:35.805	[31mERROR[0m	gpt/conf_gpt.go:28	GPT连接失败	{"err": "Post \"https://api.openai.com/v1/chat/completions\": EOF"}
+2023-03-28 18:18:35.805	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:19:17.204	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:19:17.293	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:19:17.386	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:19:17.473	[31mERROR[0m	gpt/conf_gpt.go:28	GPT连接失败	{"err": "Post \"https://api.openai.com/v1/chat/completions\": EOF"}
+2023-03-28 18:19:17.474	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:19:48.546	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:19:48.645	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:19:48.751	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:19:54.998	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How may I assist you today?
+2023-03-28 18:19:54.999	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:20:32.258	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:20:32.349	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:20:32.444	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:20:32.531	[31mERROR[0m	gpt/conf_gpt.go:28	GPT连接失败	{"err": "Post \"https://api.openai.com/v1/chat/completions\": EOF"}
+2023-03-28 18:20:32.531	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:20:44.327	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:20:44.422	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:20:44.518	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:20:48.065	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
+2023-03-28 18:20:48.065	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:25:08.027	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:25:08.167	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:25:08.260	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:25:12.174	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there, how can I assist you today?
+2023-03-28 18:25:12.175	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:25:46.354	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:25:46.444	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:25:46.542	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:25:54.267	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
+2023-03-28 18:25:54.268	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:26:59.885	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:26:59.975	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:27:00.071	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:27:07.952	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello! How can I assist you today?
+2023-03-28 18:27:07.952	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-28 18:30:05.940	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-28 18:30:06.038	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-28 18:30:06.132	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-28 18:30:09.114	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello! How can I assist you today?
+2023-03-28 18:30:09.115	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}

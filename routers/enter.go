@@ -35,6 +35,8 @@ func InitRouter() *gin.Engine {
 	routerGroupApp.MessageRouter()
 	// 文章
 	routerGroupApp.ArticleRouter()
+	// GPT
+	routerGroupApp.GptRouter()
 
 	return router
 }
