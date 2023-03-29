@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"gbv2/config/es"
 	"gbv2/config/log"
+	"gbv2/config/mysql"
 	"gbv2/models"
 	"gbv2/models/res"
 	"github.com/gin-gonic/gin"
@@ -15,6 +16,7 @@ type TagsResponse struct {
 	Tag           string   `json:"tag"`
 	Count         int      `json:"count"`
 	ArticleIDList []string `json:"article_id_list"`
+	CreatedAt     string   `json:"creat_at"`
 }
 
 type TagsType struct {
@@ -75,8 +77,9 @@ func (ArticleApi) ArticleTagListView(c *gin.Context) {
 		return
 	}
 	var tagType TagsType
-	var tagList = make([]TagsResponse, 0)
+	var tagList = make([]*TagsResponse, 0)
 	_ = json.Unmarshal(result.Aggregations["tags"], &tagType)
+	var tagStringList []string
 	for _, bucket := range tagType.Buckets {
 
 		var articleList []string
@@ -84,11 +87,22 @@ func (ArticleApi) ArticleTagListView(c *gin.Context) {
 			articleList = append(articleList, s.Key)
 		}
 
-		tagList = append(tagList, TagsResponse{
+		tagList = append(tagList, &TagsResponse{
 			Tag:           bucket.Key,
 			Count:         bucket.DocCount,
 			ArticleIDList: articleList,
 		})
+		tagStringList = append(tagStringList, bucket.Key)
+	}
+
+	var tagModelList []models.TagModel
+	mysql.DB.Find(&tagModelList, "title in ?", tagStringList)
+	var tagDate = map[string]string{}
+	for _, model := range tagModelList {
+		tagDate[model.Title] = model.CreatedAt.Format("2006-01-02 15:04:05")
+	}
+	for _, response := range tagList {
+		response.CreatedAt = tagDate[response.Tag]
 	}
 
 	res.OKWitList(tagList, count, c)
