@@ -1484,3 +1484,133 @@
 2023-03-28 18:30:06.132	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
 2023-03-28 18:30:09.114	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello! How can I assist you today?
 2023-03-28 18:30:09.115	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-29 22:57:50.045	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-29 22:57:50.183	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-29 22:57:50.279	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-29 22:57:53.919	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hi there! How can I assist you today?
+2023-03-29 22:57:53.920	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:10:25.359	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:10:25.457	[34mINFO[0m	redis/conf_redis.go:32	redis连接成功
+2023-03-31 11:11:10.432	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:11:10.530	[34mINFO[0m	redis/conf_redis.go:32	redis连接成功
+2023-03-31 11:11:10.668	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:11:13.273	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
+2023-03-31 11:11:13.273	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:18:59.566	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:18:59.668	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:21:52.657	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:21:52.758	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:21:55.957	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:21:56.056	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:21:56.166	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:21:56.688	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:21:56.688	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:21:59.401	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How may I assist you today?
+2023-03-31 11:21:59.401	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:23:00.280	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:23:00.382	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:23:00.487	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:23:00.651	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:00.651	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:02.976	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello! How can I assist you today?
+2023-03-31 11:23:02.976	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:23:37.424	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:23:37.519	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:23:37.619	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:23:37.771	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:37.771	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:37.918	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:37.918	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:38.126	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:38.126	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:38.272	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:38.272	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:38.514	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:38.514	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:38.656	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:38.656	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:38.811	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:38.811	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:38.945	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:38.945	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:39.079	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:39.079	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:39.223	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:39.223	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:39.414	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:39.414	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:39.555	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:39.555	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:39.679	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:39.679	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:39.807	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:39.807	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:39.944	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:39.944	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:40.074	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hi there! How may I assist you today?
+2023-03-31 11:23:40.075	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:23:40.083	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:40.083	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:40.261	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:40.261	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:40.398	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:40.398	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:40.536	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:40.536	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:40.663	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:40.663	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:40.801	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:40.801	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:40.943	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:40.943	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:23:41.083	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化"}
+2023-03-31 11:23:41.083	[34mINFO[0m	redis_ser/sync.go:37	hello world
+2023-03-31 11:29:00.734	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:29:00.832	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:29:00.981	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:29:01.148	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "点赞数无变化与浏览量都不变"}
+2023-03-31 11:29:01.148	[34mINFO[0m	redis_ser/sync.go:41	hello world
+2023-03-31 11:29:03.529	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
+2023-03-31 11:29:03.529	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:29:28.278	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:29:28.376	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:29:28.483	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:29:28.706	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-03-31 11:29:31.407	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
+2023-03-31 11:29:31.408	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:49:51.744	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:49:51.894	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:49:52.037	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:49:52.205	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-03-31 11:49:54.608	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hi there! How can I assist you today?
+2023-03-31 11:49:54.609	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:50:42.522	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:50:42.621	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:50:42.727	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:50:42.859	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-03-31 11:50:45.365	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello! How can I assist you today?
+2023-03-31 11:50:45.365	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:52:06.776	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:52:06.944	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:52:07.053	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:52:07.251	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-03-31 11:52:09.859	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
+2023-03-31 11:52:09.859	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:52:38.388	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:52:38.394	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:52:38.487	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:52:38.497	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:52:38.588	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:52:38.595	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:52:38.697	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-03-31 11:52:38.721	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-03-31 11:52:41.137	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
+2023-03-31 11:52:41.137	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:52:41.508	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hi there! How can I assist you today?
+2023-03-31 11:52:41.508	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 11:54:08.921	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 11:54:09.071	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 11:54:09.174	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 11:54:09.296	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-03-31 11:54:11.761	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
+2023-03-31 11:54:11.761	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}

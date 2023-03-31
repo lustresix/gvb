@@ -7,6 +7,8 @@ import (
 	"gbv2/config/log"
 	"gbv2/models"
 	"gbv2/models/res"
+	"gbv2/service/es_ser"
+	"gbv2/utils/jwt"
 	"github.com/gin-gonic/gin"
 	"github.com/olivere/elastic/v7"
 )
@@ -24,9 +26,17 @@ func (ArticleApi) ArticleRemoveView(c *gin.Context) {
 		return
 	}
 
+	_claims, _ := c.Get("claims")
+	claims := _claims.(*jwt.CustomClaims)
+
 	bulkService := es.ES.Bulk().Index(models.ArticleModel{}.Index()).Refresh("true")
 	for _, id := range cr.IDList {
 		req := elastic.NewBulkDeleteRequest().Id(id)
+		// 判断是否是该用户的文章
+		model, _ := es_ser.CommDetailByKeyword(id)
+		if model.UserID != claims.UserID {
+			continue
+		}
 		bulkService.Add(req)
 	}
 	result, err := bulkService.Do(context.Background())

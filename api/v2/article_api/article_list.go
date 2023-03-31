@@ -10,12 +10,17 @@ import (
 )
 
 func (ArticleApi) ArticleListView(c *gin.Context) {
-	var cr models.PageInfo
+	var cr es_ser.Option
 	if err := c.ShouldBindQuery(&cr); err != nil {
 		res.FailWithCode(res.ErrorParameterTransfer, c)
 		return
 	}
-	list, count, err := es_ser.CommList(cr.Key, cr.Page, cr.Limit)
+
+	list, count, err := es_ser.CommList(es_ser.Option{
+		PageInfo: cr.PageInfo,
+		Fields:   []string{"string", "content"},
+		Tag:      cr.Tag,
+	})
 	if err != nil {
 		log.Errorw("err", "err", err)
 		res.OKWithMsg("查询失败", c)

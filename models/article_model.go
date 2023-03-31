@@ -37,6 +37,14 @@ type ArticleModel struct {
 	Tags ctype.Array `json:"tags"` // 文章标签
 }
 
+type ESIDRequest struct {
+	ID string `json:"id" form:"id" url:"id"`
+}
+
+type ESIDListRequest struct {
+	IDList []string `json:"id_list"`
+}
+
 func (ArticleModel) Index() string {
 	return "article_index"
 }

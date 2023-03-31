@@ -3,6 +3,7 @@ package v2
 import (
 	"gbv2/api/v2/advert_api"
 	"gbv2/api/v2/article_api"
+	"gbv2/api/v2/digg_api"
 	"gbv2/api/v2/gpt_api"
 	"gbv2/api/v2/images_api"
 	"gbv2/api/v2/menu_api"
@@ -22,6 +23,7 @@ type ApiGroup struct {
 	MessageApi  message_api.MessageApi
 	ArticleApi  article_api.ArticleApi
 	GPTApi      gpt_api.GptApi
+	DiggApi     digg_api.DiggApi
 }
 
 var ApiGroupApp = new(ApiGroup)

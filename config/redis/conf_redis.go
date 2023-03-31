@@ -29,5 +29,6 @@ func ConnectRedis() *redis.Client {
 		return nil
 	}
 	log.Infow("redis连接成功")
+	// 同步点赞数
 	return rdb
 }

@@ -6,50 +6,106 @@ import (
 	"gbv2/config/es"
 	"gbv2/config/log"
 	"gbv2/models"
+	"gbv2/service/redis_ser"
 	"github.com/goccy/go-json"
 	"github.com/olivere/elastic/v7"
+	"strings"
 )
 
-func CommList(key string, page, limit int) (list []models.ArticleModel, count int, err error) {
+type Option struct {
+	models.PageInfo
+	Fields []string
+	Tag    string
+}
+
+type SortField struct {
+	Field     string
+	Ascending bool
+}
+
+func (o *Option) GetForm() int {
+	if o.Page == 0 {
+		o.Page = 1
+	}
+	if o.Limit == 0 {
+		o.Limit = 10
+	}
+	return (o.Page - 1) * o.Limit
+}
+
+func CommList(option Option) (list []models.ArticleModel, count int, err error) {
 
 	boolSearch := elastic.NewBoolQuery()
-	from := page
-	if key != "" {
+
+	if option.Key != "" {
 		boolSearch.Must(
-			elastic.NewMatchQuery("title", key),
+			elastic.NewMultiMatchQuery(option.Key, option.Fields...),
 		)
 	}
-	if limit == 0 {
-		limit = 10
+	if option.Tag != "" {
+		boolSearch.Must(
+			elastic.NewMultiMatchQuery(option.Tag, "tags"),
+		)
 	}
-	if from == 0 {
-		from = 1
+	sortField := SortField{
+		Field:     "created_at",
+		Ascending: false, // 从小到大  从大到小
 	}
-	do, err := es.ES.Search(models.ArticleModel{}.Index()).
+	if option.Sort != "" {
+		_list := strings.Split(option.Sort, " ")
+		if len(_list) == 2 && (_list[1] == "desc" || _list[1] == "asc") {
+			sortField.Field = _list[0]
+			if _list[1] == "desc" {
+				sortField.Ascending = false
+			}
+			if _list[1] == "asc" {
+				sortField.Ascending = true
+			}
+		}
+	}
+	res, err := es.ES.
+		Search(models.ArticleModel{}.Index()).
 		Query(boolSearch).
-		From((from - 1) * limit).Size(limit).
+		Highlight(elastic.NewHighlight().Field("title")).
+		From(option.GetForm()).
+		Sort(sortField.Field, sortField.Ascending).
+		Size(option.Limit).
 		Do(context.Background())
 	if err != nil {
-		log.Errorw("err", "err", err)
+		return
 	}
-	count = int(do.Hits.TotalHits.Value)
-	demolist := []models.ArticleModel{}
-	for _, hit := range do.Hits.Hits {
+	count = int(res.Hits.TotalHits.Value) //搜索到结果总条数
+	demoList := []models.ArticleModel{}
+
+	diggInfo := redis_ser.GetDiggInfo()
+	lookInfo := redis_ser.GetLookInfo()
+	for _, hit := range res.Hits.Hits {
 		var model models.ArticleModel
 		data, err := hit.Source.MarshalJSON()
 		if err != nil {
-			log.Errorw("err", "err", err)
+			log.Errorw(err.Error(), "err", err)
 			continue
 		}
 		err = json.Unmarshal(data, &model)
 		if err != nil {
-			log.Errorw("err", "err", err)
+			log.Errorw(err.Error(), "err", err)
 			continue
 		}
+		title, ok := hit.Highlight["title"]
+		if ok {
+			model.Title = title[0]
+		}
+		// 同步点赞数与浏览量
 		model.ID = hit.Id
-		demolist = append(demolist, model)
+		digg := diggInfo[hit.Id]
+		look := lookInfo[hit.Id]
+
+		model.DiggCount += digg
+		model.LookCount += look
+		
+		demoList = append(demoList, model)
 	}
-	return demolist, count, err
+	return demoList, count, err
 }
 
 func CommDetail(id string) (model models.ArticleModel, err error) {
@@ -65,6 +121,7 @@ func CommDetail(id string) (model models.ArticleModel, err error) {
 		return
 	}
 	model.ID = res.Id
+	model.LookCount += redis_ser.GetLook(res.Id)
 	return
 }
 
