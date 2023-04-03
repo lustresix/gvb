@@ -1614,3 +1614,17 @@
 2023-03-31 11:54:09.296	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
 2023-03-31 11:54:11.761	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
 2023-03-31 11:54:11.761	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 13:39:59.414	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 13:39:59.514	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 13:39:59.624	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 13:39:59.732	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-03-31 13:40:02.177	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
+2023-03-31 13:40:02.177	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 13:40:02.379	[34mINFO[0m	images_api/image_upload.go:140	上传图片成功	{"place: ": "uploads/images/1680241202367702000.png"}
+2023-03-31 13:40:52.685	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-03-31 13:40:52.791	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-03-31 13:40:52.902	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-03-31 13:40:53.015	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-03-31 13:40:55.377	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
+2023-03-31 13:40:55.377	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-03-31 13:41:35.288	[34mINFO[0m	images_api/image_upload.go:110	上传图片成功	{"place: ": "qiniu.scintilla.ltd/1680241292704704500.png"}

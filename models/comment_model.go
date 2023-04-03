@@ -2,15 +2,16 @@ package models
 
 import "gorm.io/gorm"
 
+// CommentModel 评论表
 type CommentModel struct {
 	gorm.Model
-	SubComments        []*CommentModel `gorm:"foreignkey:ParentCommentID" json:"sub_comments"`
-	ParentCommentModel *CommentModel   `gorm:"foreignkey:ParentCommentID" json:"parent_comment_model"`
-	ParentCommentID    *uint           `json:"parent_comment_id"`
-	Content            string          `gorm:"size:256" json:"content"`
-	DiggCount          int             `gorm:"size:8;default:0" json:"digg_count"`
-	CommentCount       int             `gorm:"size:8;default:0" json:"comment_count"`
-	ArticleESID        string          `json:"article_es_id"`
-	User               UserModel       `json:"user"`
-	UserID             uint            `json:"user_id"`
+	SubComments        []CommentModel `gorm:"foreignkey:ParentCommentID" json:"sub_comments,select(c)"` // 子评论列表
+	ParentCommentModel *CommentModel  `gorm:"foreignkey:ParentCommentID" json:"comment_model"`          // 父级评论
+	ParentCommentID    *uint          `json:"parent_comment_id,select(c)"`                              // 父评论id
+	Content            string         `gorm:"size:256" json:"content,select(c)"`                        // 评论内容
+	DiggCount          int            `gorm:"size:8;default:0;" json:"digg_count,select(c)"`            // 点赞数
+	CommentCount       int            `gorm:"size:8;default:0;" json:"comment_count,select(c)"`         // 子评论数
+	ArticleID          string         `gorm:"size:32" json:"article_id,select(c)"`                      // 文章id
+	User               UserModel      `json:"user,select(c)"`                                           // 关联的用户
+	UserID             uint           `json:"user_id,select(c)"`                                        // 评论的用户
 }

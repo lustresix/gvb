@@ -17,7 +17,7 @@ qi_niu:
     access_key: PsxBIWhDY3Kv8hruN3D9fP2LjuomhjlIh6_Q_6dm
     bucket: xm-blog-images
     cdn: qiniu.scintilla.ltd
-    enable: false
+    enable: true
     secret_key: qvxvclzt4juE-_UjB_lulwXzBVttRzvexPa69mDn
     size: 5
     zone: as0
