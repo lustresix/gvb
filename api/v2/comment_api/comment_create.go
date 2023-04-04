@@ -56,7 +56,11 @@ func (CommentApi) CommentCreateView(c *gin.Context) {
 		ArticleID:       cr.ArticleID,
 		UserID:          claims.UserID,
 	})
-	redis_ser.Comment(cr.ArticleID)
+	err = redis_ser.NewCommentCount().Set(cr.ArticleID)
+	if err != nil {
+		res.FailWithMsg("文章评论错误", c)
+		return
+	}
 	res.OKWithMsg("文章评论成功", c)
 	return
 }
