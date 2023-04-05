@@ -1,13 +1,12 @@
 package article_api
 
 import (
-	"context"
-	"gbv2/config/es"
 	"gbv2/config/log"
 	"gbv2/config/mysql"
 	"gbv2/models"
 	"gbv2/models/ctype"
 	"gbv2/models/res"
+	"gbv2/service/es_ser"
 	"github.com/fatih/structs"
 	"github.com/gin-gonic/gin"
 	"time"
@@ -88,16 +87,24 @@ func (ArticleApi) ArticleUpdateView(c *gin.Context) {
 		DataMap[key] = v
 	}
 
-	_, err = es.ES.
-		Update().
-		Index(models.ArticleModel{}.Index()).
-		Id(cr.ID).
-		Doc(DataMap).
-		Do(context.Background())
+	err = article.GetDataByID(cr.ID)
+	if err != nil {
+		log.Errorw(err.Error(), "err", err)
+		res.FailWithMsg("文章不存在", c)
+		return
+	}
+
+	err = es_ser.ArticleUpdate(cr.ID, DataMap)
 	if err != nil {
 		log.Errorw(err.Error(), "err", err)
 		res.FailWithMsg("更新失败", c)
 		return
+	}
+
+	model, _ := es_ser.CommDetail(cr.ID)
+	if article.Content != model.Content || article.Title != model.Title {
+		es_ser.DeleteFullTextByArticleID(cr.ID)
+		es_ser.AsyncArticleByText(cr.ID, article.Title, model.Content)
 	}
 	res.OKWithMsg("更新成功", c)
 }

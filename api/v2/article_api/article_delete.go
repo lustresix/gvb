@@ -38,6 +38,7 @@ func (ArticleApi) ArticleRemoveView(c *gin.Context) {
 			continue
 		}
 		bulkService.Add(req)
+		go es_ser.DeleteFullTextByArticleID(id)
 	}
 	result, err := bulkService.Do(context.Background())
 	if err != nil {

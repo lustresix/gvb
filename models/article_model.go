@@ -2,6 +2,7 @@ package models
 
 import (
 	"context"
+	"encoding/json"
 	"gbv2/config/es"
 	"gbv2/config/log"
 	"gbv2/models/ctype"
@@ -127,7 +128,8 @@ func (ArticleModel) Mapping() string {
 }
 
 func ESCreateIndex() {
-	ArticleModel{}.CreateIndex()
+	//_ = ArticleModel{}.CreateIndex()
+	_ = FullTextModel{}.CreateIndex()
 }
 
 // IndexExists 索引是否存在
@@ -184,7 +186,7 @@ func (a ArticleModel) RemoveIndex() error {
 }
 
 // Create 添加的方法
-func (a ArticleModel) Create() (err error) {
+func (a *ArticleModel) Create() (err error) {
 	indexResponse, err := es.ES.Index().
 		Index(a.Index()).
 		BodyJson(a).Do(context.Background())
@@ -211,4 +213,18 @@ func (a ArticleModel) ISExistData() bool {
 		return true
 	}
 	return false
+}
+
+func (a *ArticleModel) GetDataByID(id string) error {
+	res, err := es.ES.
+		Get().
+		Index(a.Index()).
+		Id(id).
+		Do(context.Background())
+	if err != nil {
+		return err
+	}
+	err = json.Unmarshal(res.Source, a)
+	return err
+
 }

@@ -16,10 +16,12 @@ func (router RouterGroup) ArticleRouter() {
 	router.GET("article/calendar", ArticleApi.ArticleCalendarView)
 	// 标签
 	router.GET("article/tag", ArticleApi.ArticleTagListView)
-	// 文章详情
-	router.GET("article/:id", ArticleApi.ArticleDetailView)
 	// 收藏
 	router.POST("article_collect", middleware.JwtAuth(), ArticleApi.ArticleCollCreateView)
 	router.GET("article_collect", middleware.JwtAuth(), ArticleApi.ArticleListView)
 	router.DELETE("article_collect", middleware.JwtAuth(), ArticleApi.ArticleCollCreateView)
+	// 文章搜索
+	router.GET("article/text", ArticleApi.FullTextSearchView)
+	// 文章详情
+	router.GET("article/:id", ArticleApi.ArticleDetailView)
 }

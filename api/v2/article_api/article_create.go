@@ -6,6 +6,7 @@ import (
 	"gbv2/models"
 	"gbv2/models/ctype"
 	"gbv2/models/res"
+	"gbv2/service/es_ser"
 	"gbv2/utils/jwt"
 	md "github.com/JohannesKaufmann/html-to-markdown"
 	"github.com/PuerkitoBio/goquery"
@@ -125,5 +126,7 @@ func (ArticleApi) ArticleCreateView(c *gin.Context) {
 		res.FailWithMsg(err.Error(), c)
 		return
 	}
+	go es_ser.AsyncArticleByText(article.ID, article.Title, article.Content)
+
 	res.OKWithMsg("文章发布成功", c)
 }

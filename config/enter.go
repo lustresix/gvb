@@ -7,6 +7,7 @@ import (
 	"gbv2/config/mysql"
 	"gbv2/config/redis"
 	"gbv2/config/system"
+	"gbv2/models"
 	"gbv2/routers"
 	"gbv2/service/redis_ser"
 	"github.com/spf13/viper"
@@ -18,6 +19,7 @@ func InitConfig() {
 	mysql.DBInit()
 	redis.RedisInit()
 	es.EsConnect()
+	models.ESCreateIndex()
 	go redis_ser.LikeSync()
 	gpt.ConnectGpt()
 	router := routers.InitRouter()

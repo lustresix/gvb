@@ -1628,3 +1628,34 @@
 2023-03-31 13:40:55.377	[34mINFO[0m	gpt/conf_gpt.go:33	GPT连接成功Hello there! How can I assist you today?
 2023-03-31 13:40:55.377	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
 2023-03-31 13:41:35.288	[34mINFO[0m	images_api/image_upload.go:110	上传图片成功	{"place: ": "qiniu.scintilla.ltd/1680241292704704500.png"}
+2023-04-05 13:48:50.536	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-04-05 13:48:50.642	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-04-05 13:48:50.756	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-04-05 13:48:51.071	[31mERROR[0m	models/full_text_model.go:74	创建索引失败	{"err": "elastic: Error 400 (Bad Request): Failed to parse content to map [type=parse_exception]"}
+2023-04-05 13:48:51.191	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-04-05 13:50:23.576	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-04-05 13:50:23.680	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-04-05 13:50:23.788	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-04-05 13:50:27.174	[31mERROR[0m	log/conf_logger.go:130	Ignored key without a value.	{"ignored": "full_text_index"}
+2023-04-05 13:50:27.174	[34mINFO[0m	models/full_text_model.go:81	索引创建成功
+2023-04-05 13:50:27.285	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-04-05 13:50:37.197	[31mERROR[0m	gpt/conf_gpt.go:28	GPT连接失败	{"err": "Post \"https://api.openai.com/v1/chat/completions\": net/http: TLS handshake timeout"}
+2023-04-05 13:50:37.197	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-04-05 13:52:17.119	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-04-05 13:52:17.225	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-04-05 13:52:17.334	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-04-05 13:52:17.393	[34mINFO[0m	models/full_text_model.go:87	索引存在，删除索引
+2023-04-05 13:52:18.058	[34mINFO[0m	models/full_text_model.go:99	索引删除成功
+2023-04-05 13:52:19.233	[34mINFO[0m	models/full_text_model.go:81	索引创建成功	{"索引为": "full_text_index"}
+2023-04-05 13:52:19.401	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-04-05 13:52:29.255	[31mERROR[0m	gpt/conf_gpt.go:28	GPT连接失败	{"err": "Post \"https://api.openai.com/v1/chat/completions\": net/http: TLS handshake timeout"}
+2023-04-05 13:52:29.256	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
+2023-04-05 14:37:07.452	[34mINFO[0m	mysql/conf_mysql.go:34	数据库连接成功	{"dsn:": "root:123456@tcp(127.0.0.1:3307)/blog?charset=utf8mb4&parseTime=True&loc=Local"}
+2023-04-05 14:37:07.599	[34mINFO[0m	redis/conf_redis.go:31	redis连接成功
+2023-04-05 14:37:07.706	[34mINFO[0m	es/conf_es.go:24	Elasticsearch连接成功
+2023-04-05 14:37:07.762	[34mINFO[0m	models/full_text_model.go:91	索引存在，删除索引
+2023-04-05 14:37:08.051	[34mINFO[0m	models/full_text_model.go:103	索引删除成功
+2023-04-05 14:37:09.186	[34mINFO[0m	models/full_text_model.go:85	索引创建成功	{"索引为": "full_text_index"}
+2023-04-05 14:37:09.296	[34mINFO[0m	redis_ser/sync.go:41	hello world	{"点赞数无变化与浏览量都不变": null}
+2023-04-05 14:37:19.212	[31mERROR[0m	gpt/conf_gpt.go:28	GPT连接失败	{"err": "Post \"https://api.openai.com/v1/chat/completions\": net/http: TLS handshake timeout"}
+2023-04-05 14:37:19.212	[34mINFO[0m	system/conf_system.go:11	blog 运行成功！	{"running at: ": "0.0.0.0:8087"}
