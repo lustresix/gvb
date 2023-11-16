@@ -6,6 +6,7 @@ import (
 	"gbv2/api/v2/comment_api"
 	"gbv2/api/v2/digg_api"
 	"gbv2/api/v2/gpt_api"
+	"gbv2/api/v2/im_api"
 	"gbv2/api/v2/images_api"
 	"gbv2/api/v2/menu_api"
 	"gbv2/api/v2/message_api"
@@ -26,6 +27,7 @@ type ApiGroup struct {
 	GPTApi      gpt_api.GptApi
 	DiggApi     digg_api.DiggApi
 	CommentApi  comment_api.CommentApi
+	ChatApi     im_api.IMApi
 }
 
 var ApiGroupApp = new(ApiGroup)

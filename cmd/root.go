@@ -53,7 +53,7 @@ func init() {
 	// when this action is called directly.
 
 	// Cobra 支持持久性标志(PersistentFlag)，该标志可用于它所分配的命令以及该命令下的每个子命令
-	rootCmd.PersistentFlags().StringVarP(&cfgFile, "config", "c", "", "The path to the blog configuration file. Empty string for no configuration file.")
+	rootCmd.PersistentFlags().StringVarP(&cfgFile, "config", "c", "", "Read the configuration file")
 	// Cobra 也支持本地标志，本地标志只能在其所绑定的命令上使用
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }

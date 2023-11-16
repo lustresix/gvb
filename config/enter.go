@@ -1,15 +1,12 @@
 package config
 
 import (
-	"gbv2/config/es"
-	"gbv2/config/gpt"
+	"gbv2/config/addr"
 	"gbv2/config/log"
 	"gbv2/config/mysql"
 	"gbv2/config/redis"
 	"gbv2/config/system"
-	"gbv2/models"
 	"gbv2/routers"
-	"gbv2/service/redis_ser"
 	"github.com/spf13/viper"
 )
 
@@ -18,10 +15,11 @@ func InitConfig() {
 	defer log.Sync() // Sync 将缓存中的日志刷新到磁盘文件中
 	mysql.DBInit()
 	redis.RedisInit()
-	es.EsConnect()
-	models.ESCreateIndex()
-	go redis_ser.LikeSync()
-	gpt.ConnectGpt()
+	//es.EsConnect()
+	//models.ESCreateIndex()
+	//go redis_ser.LikeSync()
+	//go gpt.ConnectGpt()
+	addr.InitAddrDB()
 	router := routers.InitRouter()
 	router.Run(system.Addr())
 }

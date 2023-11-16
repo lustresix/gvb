@@ -5,6 +5,7 @@ import (
 	"gbv2/models/res"
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
+	"time"
 )
 
 type IMIDRequest struct {
@@ -40,7 +41,10 @@ func (IMApi) CommentRemoveView(c *gin.Context) {
 		}
 		fmt.Println(string(p))
 		// 发送消息
-		_ = conn.WriteMessage(websocket.TextMessage, []byte("xxx"))
+		for i := 0; i < 5; i++ {
+			_ = conn.WriteMessage(websocket.TextMessage, []byte("xxx"))
+			time.Sleep(1 * time.Second)
+		}
 	}
 	defer func(conn *websocket.Conn) {
 		err := conn.Close()

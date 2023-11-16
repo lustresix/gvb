@@ -33,9 +33,12 @@ require (
 )
 
 require (
+	github.com/DanPlayer/randomname v1.0.1 // indirect
 	github.com/KyleBanks/depth v1.2.1 // indirect
 	github.com/andybalholm/cascadia v1.3.1 // indirect
 	github.com/bytedance/sonic v1.8.3 // indirect
+	github.com/cc14514/go-geoip2 v0.0.0-20190105051856-0a1854480a11 // indirect
+	github.com/cc14514/go-geoip2-db v0.0.0-20190106063142-7b6408a9812a // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
@@ -69,6 +72,7 @@ require (
 	github.com/onsi/gomega v1.27.4 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.7 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
+	github.com/rakyll/statik v0.1.7 // indirect
 	github.com/spf13/afero v1.9.3 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect

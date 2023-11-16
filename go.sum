@@ -38,6 +38,8 @@ cloud.google.com/go/storage v1.14.0/go.mod h1:GrKmX003DSIwi9o29oFT7YDnHYwZoctc3f
 dmitri.shuralyov.com/gpu/mtl v0.0.0-20190408044501-666a987793e9/go.mod h1:H6x//7gZCb22OMCxBHrMx7a5I7Hp++hsVxbQ4BYO7hU=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
+github.com/DanPlayer/randomname v1.0.1 h1:BY7WkgB0gsjESNsqG7NADD5KSlWYAglCiRDKMJ9Q1Zo=
+github.com/DanPlayer/randomname v1.0.1/go.mod h1:3baqzjkyc22BGUIAGK+maXF8I6vTcO+XF/tvXaZAU3E=
 github.com/JohannesKaufmann/html-to-markdown v1.3.7 h1:06rF6ct6hDbB7ur380y9Vv26UowFdTFYljSv6f4VjdI=
 github.com/JohannesKaufmann/html-to-markdown v1.3.7/go.mod h1:BzWBqKEgKeVFX4EHEF98koY2ZnAfUM6ahWmXSWAAq9o=
 github.com/KyleBanks/depth v1.2.1 h1:5h8fQADFrWtarTdtDudMmGsC7GPbOAu6RVB3ffsVFHc=
@@ -54,6 +56,10 @@ github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZx
 github.com/bytedance/sonic v1.5.0/go.mod h1:ED5hyg4y6t3/9Ku1R6dU/4KyJ48DZ4jPhfY1O2AihPM=
 github.com/bytedance/sonic v1.8.3 h1:pf6fGl5eqWYKkx1RcD4qpuX+BIUaduv/wTm5ekWJ80M=
 github.com/bytedance/sonic v1.8.3/go.mod h1:i736AoUSYt75HyZLoJW9ERYxcy6eaN6h4BZXU064P/U=
+github.com/cc14514/go-geoip2 v0.0.0-20190105051856-0a1854480a11 h1:smFM+R9NconJ5FHiMyQsq/fIjtYE0jxVJwX8ZxAmWF0=
+github.com/cc14514/go-geoip2 v0.0.0-20190105051856-0a1854480a11/go.mod h1:gC4wJD6T+unJtW078G4ugNE2UNbk4/oYwQKteOaybQE=
+github.com/cc14514/go-geoip2-db v0.0.0-20190106063142-7b6408a9812a h1:tc57+CsbpTjJLvcp2AyVAvaYmS0FFxSaRCQeUa4jcHg=
+github.com/cc14514/go-geoip2-db v0.0.0-20190106063142-7b6408a9812a/go.mod h1:MBxCt6+ltWZRodx2FgXuQm7LQweWyPofmXsuhX3D6Zo=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/chenzhuoyu/base64x v0.0.0-20211019084208-fb5309c8db06/go.mod h1:DH46F32mSOjUmXrMHnKwZdA8wcEefY7UVqBKYGjpdQY=
 github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 h1:qSGYFH7+jGhDF8vLC+iwCD4WpbV1EBDSzWkJODFLams=
@@ -294,6 +300,8 @@ github.com/qiniu/dyn v1.3.0/go.mod h1:E8oERcm8TtwJiZvkQPbcAh0RL8jO1G0VXJMW3FAWdk
 github.com/qiniu/go-sdk/v7 v7.14.0 h1:6icihMTKHoKMmeU1mqtIoHUv7c1LrLjYm8wTQaYDqmw=
 github.com/qiniu/go-sdk/v7 v7.14.0/go.mod h1:btsaOc8CA3hdVloULfFdDgDc+g4f3TDZEFsDY0BLE+w=
 github.com/qiniu/x v1.10.5/go.mod h1:03Ni9tj+N2h2aKnAz+6N0Xfl8FwMEDRC2PAlxekASDs=
+github.com/rakyll/statik v0.1.7 h1:OF3QCZUuyPxuGEP7B4ypUa7sB/iHtqOTDYZXGM8KOdQ=
+github.com/rakyll/statik v0.1.7/go.mod h1:AlZONWzMtEnMs7W4e/1LURLiI49pIMmp6V9Unghqrcc=
 github.com/rogpeppe/go-internal v1.3.0/go.mod h1:M8bDsm7K2OlrFYOpmOWEs/qY81heoFRclV5y23lUDJ4=
 github.com/rogpeppe/go-internal v1.6.1/go.mod h1:xXDCJY+GAPziupqXw64V24skbSoqbTEfhy4qGm1nDQc=
 github.com/rogpeppe/go-internal v1.8.0 h1:FCbCCtXNOY3UtUuHUYaghJg4y7Fd14rXifAYUAtL9R8=

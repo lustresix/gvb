@@ -12,7 +12,7 @@ import (
 // dbCmd represents the db command
 var dbCmd = &cobra.Command{
 	Use:   "db",
-	Short: "A brief description of your command",
+	Short: "Migrate the database and set the initial users",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 

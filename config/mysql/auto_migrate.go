@@ -11,6 +11,8 @@ func AutoMigrate() {
 	err := DB.Set("gorm:table_options", "ENGINE=InnoDB").
 		AutoMigrate(
 			&models.CommentModel{},
+			&models.ChatModel{},
+			//&logstash.LogStashModel{},
 			&models.ArticleModel{},
 			&models.UserModel{},
 			&models.MenuModel{},
